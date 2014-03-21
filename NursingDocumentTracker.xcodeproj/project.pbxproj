@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */; };
+		CE205C7118DCC682008461A8 /* XIWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE205C7018DCC682008461A8 /* XIWHomeViewController.m */; };
 		CE9D200C18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */; };
 		CE9D200E18DCC2CB007FD7E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */; };
 		CE9D201018DCC2CB007FD7E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CE205C6F18DCC682008461A8 /* XIWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIWHomeViewController.h; sourceTree = "<group>"; };
+		CE205C7018DCC682008461A8 /* XIWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIWHomeViewController.m; sourceTree = "<group>"; };
 		CE9D200818DCC2CB007FD7E3 /* NursingDocumentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingDocumentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +120,9 @@
 		CE9D201318DCC2CB007FD7E3 /* NursingDocumentTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */,
+				CE205C6F18DCC682008461A8 /* XIWHomeViewController.h */,
+				CE205C7018DCC682008461A8 /* XIWHomeViewController.m */,
 				CE9D201C18DCC2CB007FD7E3 /* XIWAppDelegate.h */,
 				CE9D201D18DCC2CB007FD7E3 /* XIWAppDelegate.m */,
 				CE9D202218DCC2CB007FD7E3 /* Images.xcassets */,
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */,
 				CE9D201818DCC2CB007FD7E3 /* InfoPlist.strings in Resources */,
 				CE9D202318DCC2CB007FD7E3 /* Images.xcassets in Resources */,
 			);
@@ -251,6 +260,7 @@
 			files = (
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
+				CE205C7118DCC682008461A8 /* XIWHomeViewController.m in Sources */,
 				CE9D201E18DCC2CB007FD7E3 /* XIWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +456,7 @@
 				CE9D203C18DCC2CB007FD7E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9D203D18DCC2CB007FD7E3 /* Build configuration list for PBXNativeTarget "NursingDocumentTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +465,7 @@
 				CE9D203F18DCC2CB007FD7E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
