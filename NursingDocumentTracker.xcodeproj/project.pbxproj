@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE4503518DE1E4300BE0622 /* XIWFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4503418DE1E4300BE0622 /* XIWFirstViewController.m */; };
+		1BE4503B18DE343F00BE0622 /* XIWRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE4503A18DE343F00BE0622 /* XIWRegisterViewController.m */; };
+		1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */; };
+		1BE450A618DF3AEE00BE0622 /* XIWUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A518DF3AEE00BE0622 /* XIWUserObject.m */; };
+		1BE450A918DF3B2400BE0622 /* XIWDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A818DF3B2400BE0622 /* XIWDataManager.m */; };
+		1BE450AC18DF777C00BE0622 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450AB18DF777C00BE0622 /* Users.m */; };
 		CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */; };
 		CE205C7118DCC682008461A8 /* XIWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE205C7018DCC682008461A8 /* XIWHomeViewController.m */; };
 		CE205C7418DCD0ED008461A8 /* XIWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE205C7318DCD0ED008461A8 /* XIWTabBarController.m */; };
@@ -38,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BE4503318DE1E4300BE0622 /* XIWFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIWFirstViewController.h; path = ../XIWFirstViewController.h; sourceTree = "<group>"; };
+		1BE4503418DE1E4300BE0622 /* XIWFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIWFirstViewController.m; path = ../XIWFirstViewController.m; sourceTree = "<group>"; };
+		1BE4503918DE343F00BE0622 /* XIWRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIWRegisterViewController.h; sourceTree = "<group>"; };
+		1BE4503A18DE343F00BE0622 /* XIWRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIWRegisterViewController.m; sourceTree = "<group>"; };
+		1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		1BE450A418DF3AEE00BE0622 /* XIWUserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIWUserObject.h; sourceTree = "<group>"; };
+		1BE450A518DF3AEE00BE0622 /* XIWUserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIWUserObject.m; sourceTree = "<group>"; };
+		1BE450A718DF3B2400BE0622 /* XIWDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XIWDataManager.h; path = ../XIWDataManager.h; sourceTree = "<group>"; };
+		1BE450A818DF3B2400BE0622 /* XIWDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XIWDataManager.m; path = ../XIWDataManager.m; sourceTree = "<group>"; };
+		1BE450AA18DF777C00BE0622 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		1BE450AB18DF777C00BE0622 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
 		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CE205C6F18DCC682008461A8 /* XIWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIWHomeViewController.h; sourceTree = "<group>"; };
 		CE205C7018DCC682008461A8 /* XIWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIWHomeViewController.m; sourceTree = "<group>"; };
@@ -123,7 +140,17 @@
 		CE9D201318DCC2CB007FD7E3 /* NursingDocumentTracker */ = {
 			isa = PBXGroup;
 			children = (
-				CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */,
+				1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */,
+				1BE450AA18DF777C00BE0622 /* Users.h */,
+				1BE450AB18DF777C00BE0622 /* Users.m */,
+				1BE450A418DF3AEE00BE0622 /* XIWUserObject.h */,
+				1BE450A518DF3AEE00BE0622 /* XIWUserObject.m */,
+				1BE450A718DF3B2400BE0622 /* XIWDataManager.h */,
+				1BE450A818DF3B2400BE0622 /* XIWDataManager.m */,
+				1BE4503318DE1E4300BE0622 /* XIWFirstViewController.h */,
+				1BE4503418DE1E4300BE0622 /* XIWFirstViewController.m */,
+				1BE4503918DE343F00BE0622 /* XIWRegisterViewController.h */,
+				1BE4503A18DE343F00BE0622 /* XIWRegisterViewController.m */,
 				CE205C6F18DCC682008461A8 /* XIWHomeViewController.h */,
 				CE205C7018DCC682008461A8 /* XIWHomeViewController.m */,
 				CE205C7218DCD0ED008461A8 /* XIWTabBarController.h */,
@@ -132,6 +159,7 @@
 				CE9D201D18DCC2CB007FD7E3 /* XIWAppDelegate.m */,
 				CE9D202218DCC2CB007FD7E3 /* Images.xcassets */,
 				CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */,
+				CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */,
 				CE9D201418DCC2CB007FD7E3 /* Supporting Files */,
 			);
 			path = NursingDocumentTracker;
@@ -263,11 +291,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE450AC18DF777C00BE0622 /* Users.m in Sources */,
+				1BE4503518DE1E4300BE0622 /* XIWFirstViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
+				1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */,
 				CE205C7418DCD0ED008461A8 /* XIWTabBarController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
 				CE205C7118DCC682008461A8 /* XIWHomeViewController.m in Sources */,
 				CE9D201E18DCC2CB007FD7E3 /* XIWAppDelegate.m in Sources */,
+				1BE450A918DF3B2400BE0622 /* XIWDataManager.m in Sources */,
+				1BE450A618DF3AEE00BE0622 /* XIWUserObject.m in Sources */,
+				1BE4503B18DE343F00BE0622 /* XIWRegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +510,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */,
+			);
+			currentVersion = 1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */;
+			path = UserModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
