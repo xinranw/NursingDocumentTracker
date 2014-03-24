@@ -40,11 +40,13 @@
 -(IBAction)login:(id)sender
 {
     
-    NSLog(@"%d",[_userDictionary count]);
+    NSLog(@"%d",[_allUsers count]);
     //password is correct
-    if([[_userDictionary objectForKey:_usernameField.text]isEqualToString:_passwordField.text]) {
-       // [self performSegueWithIdentifier:@"login" sender:self];
+    Users *currentUser = [self.allUsers objectAtIndex:0];
+    if ([currentUser.username isEqualToString:_usernameField.text] && [currentUser.password isEqualToString:_passwordField.text]) {
+        [self performSegueWithIdentifier:@"login" sender:self];
     }
+
     //password is incorrect
     else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"Please check your username and password" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];

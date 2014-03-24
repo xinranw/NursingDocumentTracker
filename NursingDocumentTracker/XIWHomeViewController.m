@@ -10,9 +10,16 @@
 
 @interface XIWHomeViewController ()
 
+-(IBAction)logout:(id)sender;
+
 @end
 
 @implementation XIWHomeViewController
+
+-(IBAction)logout:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
