@@ -44,6 +44,8 @@
             [user.password isEqualToString:_passwordField.text]) {
             // Successful login
             [self performSegueWithIdentifier:@"login" sender:self];
+            _usernameField.text = @"";
+            _passwordField.text = @"";
             return;
         }
     }
