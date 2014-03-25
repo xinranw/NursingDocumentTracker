@@ -1,5 +1,5 @@
 //
-//  Users.h
+//  NDTDataManager.h
 //  NursingDocumentTracker
 //
 //  Created by Stephanie Hsu on 3/23/14.
@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NDTUser.h"
 #import <CoreData/CoreData.h>
 
+@interface NDTDataManager : NSObject
 
-@interface Users : NSManagedObject
-
-@property (nonatomic, retain) NSString * username;
-@property (nonatomic, retain) NSString * password;
+-(BOOL)addUserWithData:(NDTUser *)user;
+-(BOOL)checkIfAlreadyRegistered:(NDTUser *)user;
+-(NSArray *)allUsers;
 
 @end

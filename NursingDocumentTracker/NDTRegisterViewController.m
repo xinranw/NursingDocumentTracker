@@ -1,17 +1,15 @@
 //
-//  XIWRegisterViewController.m
+//  NDTRegisterViewController.m
 //  NursingDocumentTracker
 //
 //  Created by Stephanie Hsu on 3/22/14.
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "XIWRegisterViewController.h"
-#import "XIWDataManager.h"
-#import "XIWUserObject.h"
+#import "NDTRegisterViewController.h"
+#import "NDTDataManager.h"
 
-
-@interface XIWRegisterViewController ()
+@interface NDTRegisterViewController ()
 
 -(IBAction)dismissModal:(id)sender;
 -(void)resignKeyboard:(id)sender;
@@ -22,7 +20,7 @@
 
 @end
 
-@implementation XIWRegisterViewController
+@implementation NDTRegisterViewController
 
 -(IBAction)dismissModal:(id)sender
 {
@@ -93,11 +91,11 @@
     else {
         //perform user registration
         
-        XIWUserObject *newUser = [[XIWUserObject alloc] init];
+        NDTUser *newUser = [[NDTUser alloc] init];
         newUser.username = usernameField.text;
         newUser.password = passwordField.text;
         
-        XIWDataManager *myDataManager = [[XIWDataManager alloc] init];
+        NDTDataManager *myDataManager = [[NDTDataManager alloc] init];
         if ([myDataManager addUserWithData:newUser]) {
             NSLog(@"SUCCESS");
             [self dismissViewControllerAnimated:YES completion:nil];

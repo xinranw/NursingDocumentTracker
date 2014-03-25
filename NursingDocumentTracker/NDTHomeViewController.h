@@ -1,5 +1,5 @@
 //
-//  XIWTabBarController.h
+//  NDTHomeViewController.h
 //  NursingDocumentTracker
 //
 //  Created by User on 3/21/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XIWTabBarController : UITabBarController
+@interface NDTHomeViewController : UIViewController
 
 @end

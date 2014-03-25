@@ -1,18 +1,18 @@
 //
-//  XIWTabBarController.m
+//  NDTTabBarController.m
 //  NursingDocumentTracker
 //
 //  Created by User on 3/21/14.
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "XIWTabBarController.h"
+#import "NDTTabBarController.h"
 
-@interface XIWTabBarController ()
+@interface NDTTabBarController ()
 
 @end
 
-@implementation XIWTabBarController
+@implementation NDTTabBarController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

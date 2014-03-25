@@ -1,5 +1,5 @@
 //
-//  XIWFirstViewController.h
+//  NDTFirstViewController.h
 //  NursingDocumentTracker
 //
 //  Created by Stephanie Hsu on 3/22/14.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NDTDataManager.h"
 
-@interface XIWFirstViewController : UIViewController
+@interface NDTFirstViewController : UIViewController
 
 @property (nonatomic,strong) IBOutlet UITextField *usernameField;
 @property (nonatomic,strong) IBOutlet UITextField *passwordField;

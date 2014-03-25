@@ -1,30 +1,30 @@
 //
-//  XIWFirstViewController.m
+//  NDTFirstViewController.m
 //  NursingDocumentTracker
 //
 //  Created by Stephanie Hsu on 3/22/14.
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "XIWFirstViewController.h"
-#import "Users.h"
+#import "NDTFirstViewController.h"
+#import "NDTUser.h"
 
-@interface XIWFirstViewController ()
+@interface NDTFirstViewController ()
 
 -(IBAction)gotoRegister:(id)sender;
 
 @property (strong) UITapGestureRecognizer *tapRecognizer;
-@property (nonatomic,strong) XIWDataManager *myDataManager;
+@property (nonatomic,strong) NDTDataManager *myDataManager;
 @property (nonatomic,strong) NSArray *allUsers;
 
 @end
 
-@implementation XIWFirstViewController
+@implementation NDTFirstViewController
 
-- (XIWDataManager *)myDataManager
+- (NDTDataManager *)myDataManager
 {
     if (!_myDataManager) {
-        _myDataManager = [[XIWDataManager alloc] init];
+        _myDataManager = [[NDTDataManager alloc] init];
     }
     return _myDataManager;
 }
@@ -42,7 +42,7 @@
     
     NSLog(@"%d",[_allUsers count]);
     //password is correct
-    Users *currentUser = [self.allUsers objectAtIndex:0];
+    NDTUser *currentUser = [self.allUsers objectAtIndex:0];
     if ([currentUser.username isEqualToString:_usernameField.text] && [currentUser.password isEqualToString:_passwordField.text]) {
         [self performSegueWithIdentifier:@"login" sender:self];
     }

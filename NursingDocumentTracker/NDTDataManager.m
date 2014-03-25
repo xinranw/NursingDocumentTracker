@@ -1,14 +1,14 @@
 //
-//  XIWDataManager.m
+//  NDTDataManager.m
 //  NursingDocumentTracker
 //
 //  Created by Stephanie Hsu on 3/23/14.
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "XIWDataManager.h"
+#import "NDTDataManager.h"
 
-@interface XIWDataManager()
+@interface NDTDataManager()
 
 @property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic,strong) NSManagedObjectModel *managedObjectModel;
@@ -19,16 +19,16 @@
 @end
 
 
-@implementation XIWDataManager
+@implementation NDTDataManager
 
 
--(BOOL)addUserWithData:(XIWUserObject *)user
+-(BOOL)addUserWithData:(NDTUser *)user
 {
     if (![self checkIfAlreadyRegistered:user]) {
         NSManagedObjectContext *context = self.managedObjectContext;
         
         //something to save to context
-        Users *userToStore = [NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:context];
+        NDTUser *userToStore = [NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:context];
         NSLog(@"HERE1");
         userToStore.username = user.username;
         userToStore.password = user.password;
@@ -47,7 +47,7 @@
     return NO;
 }
 
--(BOOL)checkIfAlreadyRegistered:(XIWUserObject *)user
+-(BOOL)checkIfAlreadyRegistered:(NDTUser *)user
 {
     NSManagedObjectContext *context = self.managedObjectContext;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];

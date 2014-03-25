@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "XIWAppDelegate.h"
+#import "NDTAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([XIWAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([NDTAppDelegate class]));
     }
 }

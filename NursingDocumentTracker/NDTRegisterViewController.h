@@ -1,5 +1,5 @@
 //
-//  XIWRegisterViewController.h
+//  NDTRegisterViewController.h
 //  NursingDocumentTracker
 //
 //  Created by Stephanie Hsu on 3/22/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XIWRegisterViewController : UIViewController <UIActionSheetDelegate,UITextFieldDelegate> {
+@interface NDTRegisterViewController : UIViewController <UIActionSheetDelegate,UITextFieldDelegate> {
 
 IBOutlet UITextField *usernameField;
 IBOutlet UITextField *emailField;

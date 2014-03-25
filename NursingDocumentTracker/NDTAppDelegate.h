@@ -1,5 +1,5 @@
 //
-//  XIWAppDelegate.h
+//  NDTAppDelegate.h
 //  NursingDocumentTracker
 //
 //  Created by User on 3/21/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XIWAppDelegate : UIResponder <UIApplicationDelegate>
+@interface NDTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -1,20 +1,20 @@
 //
-//  XIWHomeViewController.m
+//  NDTHomeViewController.m
 //  NursingDocumentTracker
 //
 //  Created by User on 3/21/14.
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "XIWHomeViewController.h"
+#import "NDTHomeViewController.h"
 
-@interface XIWHomeViewController ()
+@interface NDTHomeViewController ()
 
 -(IBAction)logout:(id)sender;
 
 @end
 
-@implementation XIWHomeViewController
+@implementation NDTHomeViewController
 
 -(IBAction)logout:(id)sender
 {

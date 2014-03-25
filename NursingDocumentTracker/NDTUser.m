@@ -6,12 +6,11 @@
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "Users.h"
+#import "NDTUser.h"
 
+@implementation NDTUser
 
-@implementation Users
-
-@dynamic username;
-@dynamic password;
+@synthesize username;
+@synthesize password;
 
 @end

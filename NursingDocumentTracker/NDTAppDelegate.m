@@ -1,14 +1,14 @@
 //
-//  XIWAppDelegate.m
+//  NDTAppDelegate.m
 //  NursingDocumentTracker
 //
 //  Created by User on 3/21/14.
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "XIWAppDelegate.h"
+#import "NDTAppDelegate.h"
 
-@implementation XIWAppDelegate
+@implementation NDTAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
