@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@interface NDTUser : NSManagedObject
+@interface NDTUser : NSObject
 
 @property (nonatomic, retain) NSString * username;
 @property (nonatomic, retain) NSString * password;

@@ -86,7 +86,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="y7X-wo-rYG" eventType="touchUpInside" id="PxT-Ls-3gg"/>
-                                    <segue destination="qPM-KT-9J0" kind="modal" identifier="login" id="R4s-5s-Lou"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKk-yK-dhE">
@@ -119,11 +118,12 @@
                     <connections>
                         <outlet property="passwordField" destination="Cac-OI-JSS" id="wtp-Dh-oyi"/>
                         <outlet property="usernameField" destination="dp3-iV-Ja1" id="TpM-qA-mpk"/>
+                        <segue destination="qPM-KT-9J0" kind="modal" identifier="login" id="dTT-ez-lPf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s82-X7-9Dm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869" y="1392"/>
+            <point key="canvasLocation" x="761" y="1408"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Pj0-GL-vIK">

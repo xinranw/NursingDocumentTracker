@@ -39,19 +39,23 @@
 
 -(IBAction)login:(id)sender
 {
-    
+    BOOL passwordCorrect = false;
     NSLog(@"%d",[_allUsers count]);
     //password is correct
-    NDTUser *currentUser = [self.allUsers objectAtIndex:0];
-    if ([currentUser.username isEqualToString:_usernameField.text] && [currentUser.password isEqualToString:_passwordField.text]) {
+    int i;
+    for (i = 0; i < _allUsers.count; i++) {
+        NDTUser *currentUser = [self.allUsers objectAtIndex:i];
+        if ([currentUser.username isEqualToString:_usernameField.text] && [currentUser.password isEqualToString:_passwordField.text]) {
+            passwordCorrect = true;
+        }
+    }
+    if (passwordCorrect) {
         [self performSegueWithIdentifier:@"login" sender:self];
     }
-
     //password is incorrect
     else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"Please check your username and password" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alert show];
-        [self dismissModalViewControllerAnimated:NO];
 
         return;
     }
