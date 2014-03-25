@@ -76,19 +76,14 @@
 -(IBAction)registerUser:(id)sender
 {
     //check to see if any fields are empty
-    if ([usernameField.text isEqualToString:@""]
-        || [emailField.text isEqualToString:@""]
-        || [passwordField.text isEqualToString:@""]
-        || [confirmedField.text isEqualToString:@""]) {
+    if (![self isFormFilled]) {
         UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Missing Field" message:@"You are missing a field" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         
         [missingFields show];
-    }
-    else if (![passwordField.text isEqualToString:confirmedField.text]) {
+    } else if (![passwordField.text isEqualToString:confirmedField.text]) {
         UIAlertView *differentPassword = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The passwords you typed were not the same" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [differentPassword show];
-    }
-    else {
+    } else {
         //perform user registration
         
         NDTUser *newUser = [[NDTUser alloc] init];
@@ -104,13 +99,21 @@
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         else {
-            UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Hey" message:@"Something is Wrong" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Registration Error" message:@"An account with the same username already exists. Please select a different username." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [missingFields show];
         }
-
     }
+}
 
-
+-(BOOL)isFormFilled
+{
+    if ([usernameField.text isEqualToString:@""]
+        || [emailField.text isEqualToString:@""]
+        || [passwordField.text isEqualToString:@""]
+        || [confirmedField.text isEqualToString:@""]) {
+        return NO;
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
