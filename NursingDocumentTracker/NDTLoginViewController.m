@@ -39,26 +39,21 @@
 
 -(IBAction)login:(id)sender
 {
-    BOOL passwordCorrect = false;
-    NSLog(@"%d",[_allUsers count]);
-    //password is correct
-    int i;
-    for (i = 0; i < _allUsers.count; i++) {
-        NDTUser *currentUser = [self.allUsers objectAtIndex:i];
-        if ([currentUser.username isEqualToString:_usernameField.text] && [currentUser.password isEqualToString:_passwordField.text]) {
-            passwordCorrect = true;
+    for (NDTUser *user in [self allUsers]) {
+        if ([user.username isEqualToString:_usernameField.text] &&
+            [user.password isEqualToString:_passwordField.text]) {
+            // Successful login
+            [self performSegueWithIdentifier:@"login" sender:self];
+            return;
         }
     }
-    if (passwordCorrect) {
-        [self performSegueWithIdentifier:@"login" sender:self];
-    }
-    //password is incorrect
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"Please check your username and password" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        [alert show];
 
-        return;
-    }
+    // If we've reached this point, invalid login
+    [[[UIAlertView alloc] initWithTitle:@"Incorrect Password"
+                               message:@"Please check your username and password"
+                              delegate:self
+                     cancelButtonTitle:@"Ok"
+                     otherButtonTitles:nil] show];
 }
 
 - (void) keyboardWillShow : (NSNotification *)note
