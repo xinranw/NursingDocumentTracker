@@ -13,7 +13,7 @@
 @interface NDTDataManager : NSObject
 
 -(BOOL)addUserWithData:(NDTUser *)user;
--(BOOL)checkIfAlreadyRegistered:(NDTUser *)user;
+-(BOOL)isAlreadyRegistered:(NDTUser *)user;
 -(NSArray *)allUsers;
 
 @end

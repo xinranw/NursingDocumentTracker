@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NDTDataManager.h"
 
-@interface NDTFirstViewController : UIViewController
+@interface NDTLoginViewController : UIViewController
 
 @property (nonatomic,strong) IBOutlet UITextField *usernameField;
 @property (nonatomic,strong) IBOutlet UITextField *passwordField;

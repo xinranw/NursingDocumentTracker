@@ -10,7 +10,7 @@
 		1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */; };
 		AAD7798718E130E200236485 /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
 		AAD7798818E130E200236485 /* NDTDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797A18E130E200236485 /* NDTDataManager.m */; };
-		AAD7798918E130E200236485 /* NDTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797C18E130E200236485 /* NDTFirstViewController.m */; };
+		AAD7798918E130E200236485 /* NDTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797C18E130E200236485 /* NDTLoginViewController.m */; };
 		AAD7798A18E130E200236485 /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797E18E130E200236485 /* NDTHomeViewController.m */; };
 		AAD7798B18E130E200236485 /* NDTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7798018E130E200236485 /* NDTRegisterViewController.m */; };
 		AAD7798C18E130E200236485 /* NDTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7798218E130E200236485 /* NDTTabBarController.m */; };
@@ -48,8 +48,8 @@
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
 		AAD7797918E130E200236485 /* NDTDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDataManager.h; sourceTree = "<group>"; };
 		AAD7797A18E130E200236485 /* NDTDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDataManager.m; sourceTree = "<group>"; };
-		AAD7797B18E130E200236485 /* NDTFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTFirstViewController.h; sourceTree = "<group>"; };
-		AAD7797C18E130E200236485 /* NDTFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTFirstViewController.m; sourceTree = "<group>"; };
+		AAD7797B18E130E200236485 /* NDTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTLoginViewController.h; sourceTree = "<group>"; };
+		AAD7797C18E130E200236485 /* NDTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTLoginViewController.m; sourceTree = "<group>"; };
 		AAD7797D18E130E200236485 /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
 		AAD7797E18E130E200236485 /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
 		AAD7797F18E130E200236485 /* NDTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTRegisterViewController.h; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 			children = (
 				AAD7798118E130E200236485 /* NDTTabBarController.h */,
 				AAD7798218E130E200236485 /* NDTTabBarController.m */,
-				AAD7797B18E130E200236485 /* NDTFirstViewController.h */,
-				AAD7797C18E130E200236485 /* NDTFirstViewController.m */,
+				AAD7797B18E130E200236485 /* NDTLoginViewController.h */,
+				AAD7797C18E130E200236485 /* NDTLoginViewController.m */,
 				AAD7797D18E130E200236485 /* NDTHomeViewController.h */,
 				AAD7797E18E130E200236485 /* NDTHomeViewController.m */,
 				AAD7797F18E130E200236485 /* NDTRegisterViewController.h */,
@@ -310,7 +310,7 @@
 				AAD7798A18E130E200236485 /* NDTHomeViewController.m in Sources */,
 				1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */,
 				AAD7798818E130E200236485 /* NDTDataManager.m in Sources */,
-				AAD7798918E130E200236485 /* NDTFirstViewController.m in Sources */,
+				AAD7798918E130E200236485 /* NDTLoginViewController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

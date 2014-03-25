@@ -24,30 +24,26 @@
 
 -(BOOL)addUserWithData:(NDTUser *)user
 {
-    if (![self checkIfAlreadyRegistered:user]) {
-        NSManagedObjectContext *context = self.managedObjectContext;
-        
-        //something to save to context
-        NDTUser *userToStore = [NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:context];
-        NSLog(@"HERE1");
-        userToStore.username = user.username;
-        userToStore.password = user.password;
-        NSLog(@"HERE2");
-
-        NSError *error;
-        if (![context save:&error]) {
-            //errror
-            return NO;
-        }
-        NSLog(@"1");
-
-        return YES;
+    if ([self isAlreadyRegistered:user]){
+        return NO;
     }
-    NSLog(@"2");
-    return NO;
+    NSManagedObjectContext *context = self.managedObjectContext;
+    
+    //attempt to save user information
+    NDTUser *userToStore = [NSEntityDescription insertNewObjectForEntityForName:@"Users" inManagedObjectContext:context];
+    userToStore.username = user.username;
+    userToStore.password = user.password;
+    
+    NSError *error;
+    if (![context save:&error]) {
+        //errror
+        return NO;
+    }
+    
+    return YES;
 }
 
--(BOOL)checkIfAlreadyRegistered:(NDTUser *)user
+-(BOOL)isAlreadyRegistered:(NDTUser *)user
 {
     NSManagedObjectContext *context = self.managedObjectContext;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];

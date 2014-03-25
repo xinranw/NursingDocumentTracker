@@ -92,12 +92,15 @@
         //perform user registration
         
         NDTUser *newUser = [[NDTUser alloc] init];
-        newUser.username = usernameField.text;
-        newUser.password = passwordField.text;
+        newUser.username = [usernameField.text stringByTrimmingCharactersInSet:
+                            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        newUser.password = [passwordField.text stringByTrimmingCharactersInSet:
+                            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
         
         NDTDataManager *myDataManager = [[NDTDataManager alloc] init];
         if ([myDataManager addUserWithData:newUser]) {
-            NSLog(@"SUCCESS");
+            UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Account successfully registered." delegate:self cancelButtonTitle:@"Back to login" otherButtonTitles:nil, nil];
+            [missingFields show];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
         else {

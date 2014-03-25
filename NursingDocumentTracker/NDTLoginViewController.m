@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "NDTFirstViewController.h"
+#import "NDTLoginViewController.h"
 #import "NDTUser.h"
 
-@interface NDTFirstViewController ()
+@interface NDTLoginViewController ()
 
 -(IBAction)gotoRegister:(id)sender;
 
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation NDTFirstViewController
+@implementation NDTLoginViewController
 
 - (NDTDataManager *)myDataManager
 {
