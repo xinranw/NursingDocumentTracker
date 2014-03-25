@@ -53,7 +53,7 @@
     // If we've reached this point, invalid login
     [[[UIAlertView alloc] initWithTitle:@"Incorrect Password"
                                message:@"Please check your username and password"
-                              delegate:self
+                              delegate:nil
                      cancelButtonTitle:@"Ok"
                      otherButtonTitles:nil] show];
 }

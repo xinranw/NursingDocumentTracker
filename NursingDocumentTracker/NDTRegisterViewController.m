@@ -75,45 +75,59 @@
 
 -(IBAction)registerUser:(id)sender
 {
-    //check to see if any fields are empty
+    // Is form not empty?
     if (![self isFormFilled]) {
-        UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Missing Field" message:@"You are missing a field" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        
-        [missingFields show];
-    } else if (![passwordField.text isEqualToString:confirmedField.text]) {
-        UIAlertView *differentPassword = [[UIAlertView alloc] initWithTitle:@"Error" message:@"The passwords you typed were not the same" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [differentPassword show];
-    } else {
-        //perform user registration
-        
-        NDTUser *newUser = [[NDTUser alloc] init];
-        newUser.username = [usernameField.text stringByTrimmingCharactersInSet:
-                            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        newUser.password = [passwordField.text stringByTrimmingCharactersInSet:
-                            [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        
-        NDTDataManager *myDataManager = [[NDTDataManager alloc] init];
-        if ([myDataManager addUserWithData:newUser]) {
-            UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Account successfully registered." delegate:self cancelButtonTitle:@"Back to login" otherButtonTitles:nil, nil];
-            [missingFields show];
-            [self dismissViewControllerAnimated:YES completion:nil];
-        }
-        else {
-            UIAlertView *missingFields = [[UIAlertView alloc] initWithTitle:@"Registration Error" message:@"An account with the same username already exists. Please select a different username." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [missingFields show];
-        }
+        [[[UIAlertView alloc] initWithTitle:@"Missing Field"
+                                    message:@"You are missing a field"
+                                    delegate:nil
+                            cancelButtonTitle:@"Ok"
+                             otherButtonTitles:nil, nil] show];
+        return;
     }
+    
+    // Does inputted password match confirmation?
+    if (![passwordField.text isEqualToString:confirmedField.text]) {
+        [[[UIAlertView alloc] initWithTitle:@"Error"
+                                   message:@"The passwords you typed were not the same"
+                                  delegate:nil
+                         cancelButtonTitle:@"Ok"
+                         otherButtonTitles:nil, nil] show];
+        return;
+    }
+
+    // Create user and populate user/pass fields
+    NDTUser *newUser = [[NDTUser alloc] init];
+    newUser.username =
+        [usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    newUser.password =
+        [passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        
+    NDTDataManager *myDataManager = [[NDTDataManager alloc] init];
+    // Unable to add user?
+    if (![myDataManager addUserWithData:newUser]) {
+        [[[UIAlertView alloc] initWithTitle:@"Registration Error"
+                                   message:@"An account with the same username already exists. Please select a different username."
+                                  delegate:nil
+                         cancelButtonTitle:@"Ok"
+                         otherButtonTitles:nil, nil] show];
+        return;
+    }
+    
+    // We've successfully created our user!
+    [[[UIAlertView alloc] initWithTitle:@"Success"
+                                message:@"Account successfully registered."
+                               delegate:nil
+                      cancelButtonTitle:@"Back to login"
+                      otherButtonTitles:nil, nil] show];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(BOOL)isFormFilled
 {
-    if ([usernameField.text isEqualToString:@""]
-        || [emailField.text isEqualToString:@""]
-        || [passwordField.text isEqualToString:@""]
-        || [confirmedField.text isEqualToString:@""]) {
-        return NO;
-    }
-    return YES;
+    return !([usernameField.text isEqualToString:@""] ||
+             [emailField.text isEqualToString:@""]    ||
+             [passwordField.text isEqualToString:@""] ||
+             [confirmedField.text isEqualToString:@""]);
 }
 
 - (void)didReceiveMemoryWarning

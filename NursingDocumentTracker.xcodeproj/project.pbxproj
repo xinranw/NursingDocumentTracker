@@ -115,14 +115,14 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AAD7798118E130E200236485 /* NDTTabBarController.h */,
-				AAD7798218E130E200236485 /* NDTTabBarController.m */,
-				AAD7797B18E130E200236485 /* NDTLoginViewController.h */,
-				AAD7797C18E130E200236485 /* NDTLoginViewController.m */,
 				AAD7797D18E130E200236485 /* NDTHomeViewController.h */,
 				AAD7797E18E130E200236485 /* NDTHomeViewController.m */,
+				AAD7797B18E130E200236485 /* NDTLoginViewController.h */,
+				AAD7797C18E130E200236485 /* NDTLoginViewController.m */,
 				AAD7797F18E130E200236485 /* NDTRegisterViewController.h */,
 				AAD7798018E130E200236485 /* NDTRegisterViewController.m */,
+				AAD7798118E130E200236485 /* NDTTabBarController.h */,
+				AAD7798218E130E200236485 /* NDTTabBarController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
