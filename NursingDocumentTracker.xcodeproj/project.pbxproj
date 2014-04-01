@@ -468,7 +468,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/christian/Dropbox/Penn/2014\\ Spring/CIS\\ 350/NursingDocumentTracker",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
@@ -485,7 +485,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/christian/Dropbox/Penn/2014\\ Spring/CIS\\ 350/NursingDocumentTracker",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
