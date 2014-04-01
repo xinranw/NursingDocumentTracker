@@ -23,8 +23,8 @@
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     
     // Parse API
-    [Parse setApplicationId:@"c3G3hMTmbXofeEsRxwXyWg1ve6mvfS3AcPGHSZjH"
-                  clientKey:@"adDnsrdVbuLkcWAnu698xfgUHc46SBBQzcwo0sDM"];
+    [Parse setApplicationId:@"IwDZdySCmz9sFWr2R5pxFCg8tM4pdsTFXyR4D11n"
+                  clientKey:@"JLF0CsbzUPE1tlhDlb94Jdo1PW6AAv4OeSmHwPfC"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     return YES;
