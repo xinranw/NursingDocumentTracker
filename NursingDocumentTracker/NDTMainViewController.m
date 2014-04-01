@@ -40,9 +40,15 @@
 {
     PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
     [logInViewController setDelegate:self];
-    
+    logInViewController.fields = PFLogInFieldsUsernameAndPassword |
+                                 PFLogInFieldsLogInButton |
+                                 PFLogInFieldsSignUpButton;
+
     PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
     [signUpViewController setDelegate:self];
+    signUpViewController.fields = PFSignUpFieldsUsernameAndPassword |
+                                  PFSignUpFieldsSignUpButton |
+                                  PFSignUpFieldsDismissButton;
     
     [logInViewController setSignUpController:signUpViewController];
     
@@ -111,7 +117,8 @@
 
 // Sent to the delegate when a PFUser is signed up.
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [PFUser logOut]; // we want to force the user to re-login
+    [signUpController dismissViewControllerAnimated:YES completion:NULL];
 }
 
 // Sent to the delegate when the sign up attempt fails.
