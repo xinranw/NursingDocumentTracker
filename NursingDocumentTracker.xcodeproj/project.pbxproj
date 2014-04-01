@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BD5F35918EA6D6A00AC551E /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
 		AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9018EA8C20008C249B /* NDTMainViewController.m */; };
 		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
 		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
-		AA522D9618EA8C9E008C249B /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
 		AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
+		AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9A18EA939B008C249B /* NDTUploadViewController.m */; };
 		AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3918EA69AE008DA57F /* Parse.framework */; };
 		AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */; };
 		AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3D18EA6A44008DA57F /* CFNetwork.framework */; };
@@ -53,12 +52,12 @@
 /* Begin PBXFileReference section */
 		1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCategoryViewController.h; sourceTree = "<group>"; };
 		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
-		1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDTUploadViewController.h; path = ../NDTUploadViewController.h; sourceTree = "<group>"; };
-		1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDTUploadViewController.m; path = ../NDTUploadViewController.m; sourceTree = "<group>"; };
 		AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
 		AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
 		AA522D8F18EA8C20008C249B /* NDTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTMainViewController.h; sourceTree = "<group>"; };
 		AA522D9018EA8C20008C249B /* NDTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTMainViewController.m; sourceTree = "<group>"; };
+		AA522D9918EA939B008C249B /* NDTUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadViewController.h; sourceTree = "<group>"; };
+		AA522D9A18EA939B008C249B /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadViewController.m; sourceTree = "<group>"; };
 		AA851A3918EA69AE008DA57F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA851A3D18EA6A44008DA57F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -142,8 +141,8 @@
 				AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */,
 				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
 				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
-				1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */,
-				1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */,
+				AA522D9918EA939B008C249B /* NDTUploadViewController.h */,
+				AA522D9A18EA939B008C249B /* NDTUploadViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -334,9 +333,9 @@
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
-				AA522D9618EA8C9E008C249B /* NDTUploadViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
+				AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +344,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD5F35918EA6D6A00AC551E /* NDTUploadViewController.m in Sources */,
 				CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
