@@ -54,13 +54,11 @@
     NSError *error;
     NSArray *fetchedResults = [context executeFetchRequest:fetchRequest error:&error];
     
-    NSLog(@"3");
     return [fetchedResults count] > 0;
 }
 
 -(NSArray *)allUsers
 {
-    NSLog(@"H#asdf");
     NSManagedObjectContext *context = self.managedObjectContext;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Users" inManagedObjectContext:context];
@@ -68,7 +66,6 @@
     NSError *error;
     NSArray *fetchedResults = [context executeFetchRequest:fetchRequest error:&error];
     
-    NSLog(@"4");
     return fetchedResults;
 }
 
@@ -79,7 +76,6 @@
         _managedObjectContext.persistentStoreCoordinator = self.persistentStorecoordinator;
 
     }
-    NSLog(@"5");
     return _managedObjectContext;
 }
 
@@ -91,7 +87,6 @@
         NSURL *storeURL = [[NSBundle mainBundle] URLForResource:@"UserModel" withExtension:@"momd"];
         _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:storeURL];
     }
-    NSLog(@"6");
     return _managedObjectModel;
 }
 
@@ -106,13 +101,11 @@
         _persistentStorecoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
         [_persistentStorecoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error];
     }
-    NSLog(@"7");
     return _persistentStorecoordinator;
 }
 
 - (NSURL *)applicationDirectory
 {
-    NSLog(@"8");
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]lastObject];
 }
 

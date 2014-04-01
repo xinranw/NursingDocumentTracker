@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2768BB18EA7EF2000C1DD4 /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
+		1BD5F35818EA6D6A00AC551E /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
+		1BD5F35918EA6D6A00AC551E /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
 		1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */; };
 		AAD7798718E130E200236485 /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
 		AAD7798818E130E200236485 /* NDTDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797A18E130E200236485 /* NDTDataManager.m */; };
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCategoryViewController.h; sourceTree = "<group>"; };
+		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
+		1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDTUploadViewController.h; path = ../NDTUploadViewController.h; sourceTree = "<group>"; };
+		1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDTUploadViewController.m; path = ../NDTUploadViewController.m; sourceTree = "<group>"; };
 		1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
 		AAD7797718E130E200236485 /* NDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTAppDelegate.h; sourceTree = "<group>"; };
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +122,10 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */,
+				1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */,
+				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
+				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
 				AAD7797D18E130E200236485 /* NDTHomeViewController.h */,
 				AAD7797E18E130E200236485 /* NDTHomeViewController.m */,
 				AAD7797B18E130E200236485 /* NDTLoginViewController.h */,
@@ -303,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD7798C18E130E200236485 /* NDTTabBarController.m in Sources */,
+				1BD5F35818EA6D6A00AC551E /* NDTUploadViewController.m in Sources */,
 				AAD7798D18E130E200236485 /* NDTUser.m in Sources */,
 				AAD7798B18E130E200236485 /* NDTRegisterViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
@@ -310,6 +322,7 @@
 				AAD7798A18E130E200236485 /* NDTHomeViewController.m in Sources */,
 				1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */,
 				AAD7798818E130E200236485 /* NDTDataManager.m in Sources */,
+				1B2768BB18EA7EF2000C1DD4 /* NDTCategoryViewController.m in Sources */,
 				AAD7798918E130E200236485 /* NDTLoginViewController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
 			);
@@ -319,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD5F35918EA6D6A00AC551E /* NDTUploadViewController.m in Sources */,
 				CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
