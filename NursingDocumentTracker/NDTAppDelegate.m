@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
+#import <Parse/Parse.h>
+
 #import "NDTAppDelegate.h"
 
 @implementation NDTAppDelegate
@@ -19,6 +21,12 @@
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    
+    // Parse API
+    [Parse setApplicationId:@"IwDZdySCmz9sFWr2R5pxFCg8tM4pdsTFXyR4D11n"
+                  clientKey:@"JLF0CsbzUPE1tlhDlb94Jdo1PW6AAv4OeSmHwPfC"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 
