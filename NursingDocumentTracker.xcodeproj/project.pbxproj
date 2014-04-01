@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */; };
+		AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3918EA69AE008DA57F /* Parse.framework */; };
+		AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */; };
+		AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3D18EA6A44008DA57F /* CFNetwork.framework */; };
+		AA851A4018EA6A52008DA57F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3F18EA6A52008DA57F /* CoreLocation.framework */; };
+		AA851A4218EA6A5A008DA57F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4118EA6A5A008DA57F /* libz.dylib */; };
+		AA851A4418EA6A69008DA57F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4318EA6A69008DA57F /* MobileCoreServices.framework */; };
+		AA851A4618EA6A6F008DA57F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4518EA6A6F008DA57F /* QuartzCore.framework */; };
+		AA851A4818EA6A75008DA57F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4718EA6A75008DA57F /* Security.framework */; };
+		AA851A4A18EA6A7A008DA57F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4918EA6A7A008DA57F /* StoreKit.framework */; };
+		AA851A4C18EA6A80008DA57F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */; };
 		AAD7798718E130E200236485 /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
 		AAD7798818E130E200236485 /* NDTDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797A18E130E200236485 /* NDTDataManager.m */; };
 		AAD7798918E130E200236485 /* NDTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797C18E130E200236485 /* NDTLoginViewController.m */; };
@@ -44,6 +54,16 @@
 
 /* Begin PBXFileReference section */
 		1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		AA851A3918EA69AE008DA57F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AA851A3D18EA6A44008DA57F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AA851A3F18EA6A52008DA57F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AA851A4118EA6A5A008DA57F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AA851A4318EA6A69008DA57F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AA851A4518EA6A6F008DA57F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA851A4718EA6A75008DA57F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AA851A4918EA6A7A008DA57F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AAD7797718E130E200236485 /* NDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTAppDelegate.h; sourceTree = "<group>"; };
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
 		AAD7797918E130E200236485 /* NDTDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDataManager.h; sourceTree = "<group>"; };
@@ -82,10 +102,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA851A4C18EA6A80008DA57F /* SystemConfiguration.framework in Frameworks */,
+				AA851A4A18EA6A7A008DA57F /* StoreKit.framework in Frameworks */,
+				AA851A4818EA6A75008DA57F /* Security.framework in Frameworks */,
+				AA851A4618EA6A6F008DA57F /* QuartzCore.framework in Frameworks */,
+				AA851A4418EA6A69008DA57F /* MobileCoreServices.framework in Frameworks */,
+				AA851A4218EA6A5A008DA57F /* libz.dylib in Frameworks */,
+				AA851A4018EA6A52008DA57F /* CoreLocation.framework in Frameworks */,
 				CE9D200E18DCC2CB007FD7E3 /* CoreGraphics.framework in Frameworks */,
+				AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */,
+				AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */,
 				CE9D201218DCC2CB007FD7E3 /* CoreData.framework in Frameworks */,
 				CE9D201018DCC2CB007FD7E3 /* UIKit.framework in Frameworks */,
 				CE9D200C18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */,
+				AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +179,17 @@
 		CE9D200A18DCC2CB007FD7E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */,
+				AA851A4918EA6A7A008DA57F /* StoreKit.framework */,
+				AA851A4718EA6A75008DA57F /* Security.framework */,
+				AA851A4518EA6A6F008DA57F /* QuartzCore.framework */,
+				AA851A4318EA6A69008DA57F /* MobileCoreServices.framework */,
+				AA851A4118EA6A5A008DA57F /* libz.dylib */,
+				AA851A3F18EA6A52008DA57F /* CoreLocation.framework */,
+				AA851A3D18EA6A44008DA57F /* CFNetwork.framework */,
+				AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */,
 				CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */,
+				AA851A3918EA69AE008DA57F /* Parse.framework */,
 				CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */,
 				CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */,
 				CE9D201118DCC2CB007FD7E3 /* CoreData.framework */,
@@ -426,6 +466,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/christian/Dropbox/Penn/2014\\ Spring/CIS\\ 350/NursingDocumentTracker",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
@@ -439,6 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/christian/Dropbox/Penn/2014\\ Spring/CIS\\ 350/NursingDocumentTracker",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
