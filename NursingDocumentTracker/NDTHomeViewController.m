@@ -6,20 +6,14 @@
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
+#import "NDTMainViewController.h"
 #import "NDTHomeViewController.h"
 
 @interface NDTHomeViewController ()
 
--(IBAction)logout:(id)sender;
-
 @end
 
 @implementation NDTHomeViewController
-
--(IBAction)logout:(id)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,7 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     [self addFolderButtons];
 }
 
@@ -91,10 +84,10 @@
     NSLog(@"you clicked on button %@", sender);
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)logoutButtonTapAction:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [PFUser logOut];
+    [(NDTMainViewController*)self.tabBarController presentLogInViewController];
 }
 
 @end

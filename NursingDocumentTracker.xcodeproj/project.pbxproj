@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2768BB18EA7EF2000C1DD4 /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
-		1BD5F35818EA6D6A00AC551E /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
 		1BD5F35918EA6D6A00AC551E /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
-		1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */; };
+		AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9018EA8C20008C249B /* NDTMainViewController.m */; };
+		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
+		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
+		AA522D9618EA8C9E008C249B /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */; };
+		AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
 		AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3918EA69AE008DA57F /* Parse.framework */; };
 		AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */; };
 		AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3D18EA6A44008DA57F /* CFNetwork.framework */; };
@@ -21,13 +23,6 @@
 		AA851A4818EA6A75008DA57F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4718EA6A75008DA57F /* Security.framework */; };
 		AA851A4A18EA6A7A008DA57F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4918EA6A7A008DA57F /* StoreKit.framework */; };
 		AA851A4C18EA6A80008DA57F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */; };
-		AAD7798718E130E200236485 /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
-		AAD7798818E130E200236485 /* NDTDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797A18E130E200236485 /* NDTDataManager.m */; };
-		AAD7798918E130E200236485 /* NDTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797C18E130E200236485 /* NDTLoginViewController.m */; };
-		AAD7798A18E130E200236485 /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797E18E130E200236485 /* NDTHomeViewController.m */; };
-		AAD7798B18E130E200236485 /* NDTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7798018E130E200236485 /* NDTRegisterViewController.m */; };
-		AAD7798C18E130E200236485 /* NDTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7798218E130E200236485 /* NDTTabBarController.m */; };
-		AAD7798D18E130E200236485 /* NDTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7798418E130E200236485 /* NDTUser.m */; };
 		CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */; };
 		CE9D200C18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */; };
 		CE9D200E18DCC2CB007FD7E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */; };
@@ -60,7 +55,10 @@
 		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
 		1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDTUploadViewController.h; path = ../NDTUploadViewController.h; sourceTree = "<group>"; };
 		1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NDTUploadViewController.m; path = ../NDTUploadViewController.m; sourceTree = "<group>"; };
-		1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserModel.xcdatamodel; sourceTree = "<group>"; };
+		AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
+		AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
+		AA522D8F18EA8C20008C249B /* NDTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTMainViewController.h; sourceTree = "<group>"; };
+		AA522D9018EA8C20008C249B /* NDTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTMainViewController.m; sourceTree = "<group>"; };
 		AA851A3918EA69AE008DA57F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA851A3D18EA6A44008DA57F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -73,18 +71,6 @@
 		AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AAD7797718E130E200236485 /* NDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTAppDelegate.h; sourceTree = "<group>"; };
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
-		AAD7797918E130E200236485 /* NDTDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDataManager.h; sourceTree = "<group>"; };
-		AAD7797A18E130E200236485 /* NDTDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDataManager.m; sourceTree = "<group>"; };
-		AAD7797B18E130E200236485 /* NDTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTLoginViewController.h; sourceTree = "<group>"; };
-		AAD7797C18E130E200236485 /* NDTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTLoginViewController.m; sourceTree = "<group>"; };
-		AAD7797D18E130E200236485 /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
-		AAD7797E18E130E200236485 /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
-		AAD7797F18E130E200236485 /* NDTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTRegisterViewController.h; sourceTree = "<group>"; };
-		AAD7798018E130E200236485 /* NDTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTRegisterViewController.m; sourceTree = "<group>"; };
-		AAD7798118E130E200236485 /* NDTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTTabBarController.h; sourceTree = "<group>"; };
-		AAD7798218E130E200236485 /* NDTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTTabBarController.m; sourceTree = "<group>"; };
-		AAD7798318E130E200236485 /* NDTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUser.h; sourceTree = "<group>"; };
-		AAD7798418E130E200236485 /* NDTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUser.m; sourceTree = "<group>"; };
 		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CE9D200818DCC2CB007FD7E3 /* NursingDocumentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingDocumentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -143,8 +129,6 @@
 		AAD7798F18E1311700236485 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AAD7798318E130E200236485 /* NDTUser.h */,
-				AAD7798418E130E200236485 /* NDTUser.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -152,18 +136,14 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */,
-				1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */,
+				AA522D8F18EA8C20008C249B /* NDTMainViewController.h */,
+				AA522D9018EA8C20008C249B /* NDTMainViewController.m */,
+				AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */,
+				AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */,
 				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
 				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
-				AAD7797D18E130E200236485 /* NDTHomeViewController.h */,
-				AAD7797E18E130E200236485 /* NDTHomeViewController.m */,
-				AAD7797B18E130E200236485 /* NDTLoginViewController.h */,
-				AAD7797C18E130E200236485 /* NDTLoginViewController.m */,
-				AAD7797F18E130E200236485 /* NDTRegisterViewController.h */,
-				AAD7798018E130E200236485 /* NDTRegisterViewController.m */,
-				AAD7798118E130E200236485 /* NDTTabBarController.h */,
-				AAD7798218E130E200236485 /* NDTTabBarController.m */,
+				1BD5F35618EA6D6A00AC551E /* NDTUploadViewController.h */,
+				1BD5F35718EA6D6A00AC551E /* NDTUploadViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -216,9 +196,6 @@
 				AAD7798F18E1311700236485 /* Models */,
 				AAD7797718E130E200236485 /* NDTAppDelegate.h */,
 				AAD7797818E130E200236485 /* NDTAppDelegate.m */,
-				AAD7797918E130E200236485 /* NDTDataManager.h */,
-				AAD7797A18E130E200236485 /* NDTDataManager.m */,
-				1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */,
 				CE9D202218DCC2CB007FD7E3 /* Images.xcassets */,
 				CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */,
 				CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */,
@@ -353,18 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAD7798C18E130E200236485 /* NDTTabBarController.m in Sources */,
-				1BD5F35818EA6D6A00AC551E /* NDTUploadViewController.m in Sources */,
-				AAD7798D18E130E200236485 /* NDTUser.m in Sources */,
-				AAD7798B18E130E200236485 /* NDTRegisterViewController.m in Sources */,
+				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
+				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
+				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
+				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
+				AA522D9618EA8C9E008C249B /* NDTUploadViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
-				AAD7798718E130E200236485 /* NDTAppDelegate.m in Sources */,
-				AAD7798A18E130E200236485 /* NDTHomeViewController.m in Sources */,
-				1BE450A318DF3A8100BE0622 /* UserModel.xcdatamodeld in Sources */,
-				AAD7798818E130E200236485 /* NDTDataManager.m in Sources */,
-				1B2768BB18EA7EF2000C1DD4 /* NDTCategoryViewController.m in Sources */,
-				AAD7798918E130E200236485 /* NDTLoginViewController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
+				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,16 +555,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1BE450A118DF3A8100BE0622 /* UserModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */,
-			);
-			currentVersion = 1BE450A218DF3A8100BE0622 /* UserModel.xcdatamodel */;
-			path = UserModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
