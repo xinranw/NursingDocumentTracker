@@ -11,6 +11,7 @@
 
 @interface NDTCategoryViewController ()
 
+@property (strong, nonatomic) NDTUploadController *uploadController;
 @property (strong, nonatomic) NSArray *categoryArray;
 
 @end
@@ -21,6 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _uploadController = (NDTUploadController *) self.navigationController;
     self.nextButton.enabled = false;
     [self setupUIPicker];
 }
@@ -61,6 +63,7 @@
 //    [self.navigationController pushViewController:objOtherViewController animated:YES];
     
     self.nextButton.enabled = true;
+    [_uploadController setDocumentCategory:[_categoryArray objectAtIndex:row]];
 }
 
 - (void)didReceiveMemoryWarning

@@ -32,6 +32,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    _uploadController = (NDTUploadController *) self.navigationController;    
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     if (!self.imageView.image){
         self.nextButton.enabled = false;
@@ -40,14 +42,6 @@
     }
     [self.takeImageButton addTarget:self action:@selector(loadCamera:) forControlEvents:UIControlEventTouchUpInside];
     [self loadCamera:nil];
-}
-
-- (NDTUploadController *) uploadController;
-{
-    if (!_uploadController){
-        _uploadController = (NDTUploadController *) self.navigationController;
-    }
-    return _uploadController;
 }
 
 - (void) loadCamera:(id)sender
@@ -65,7 +59,6 @@
     [imagePicker setDelegate:self];
     
     [self presentViewController:imagePicker animated:YES completion: nil];
-    
 }
 
 

@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [_document init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,14 +35,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NDTDocument *) document
+{
+    if (!_document){
+        [_document init];
+    }
+
+    return _document;
+}
+
 - (void) setDocumentImage: (UIImage *)image;
 {
+    NSLog(@"setting document image");
     _document = [[NDTDocument alloc] initWithImage:image];
 }
 
 - (void) addDocumentPropertyWithKey: (NSString *)key AndValue: (NSData *) value
 {
     [_document addPropertyWithKey:key AndValue:value];
+}
+
+- (void) setDocumentCategory: (NSString *)category
+{
+    _document.category = category;
 }
 
 - (void) uploadImage
@@ -114,7 +128,15 @@
     } progressBlock:^(int percentDone) {
         // Update your progress spinner here. percentDone will be between 0 and 100.
         HUD.progress = (float)percentDone/100;
-    }];}
+    }];
+}
+
+- (NSString *) description
+{
+    return @"This is a upload controller.";
+}
+
+
 
 
 @end

@@ -11,6 +11,7 @@
 @interface NDTDocument : NSObject
 
 @property (nonatomic,strong) UIImage *image;
+@property (nonatomic,strong) NSString *category;
 @property (nonatomic,strong) NSMutableDictionary *properties;
 
 - (id) init;

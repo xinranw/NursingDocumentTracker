@@ -19,6 +19,9 @@
 }
 
 @property (strong, nonatomic) NDTDocument *document;
+@property (strong, nonatomic) UIBarButtonItem *testButton;
 
 - (void) setDocumentImage: (UIImage *)image;
+- (void) setDocumentCategory: (NSString *)category;
+//- (void) addDocumentProperty: (
 @end
