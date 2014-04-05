@@ -6,13 +6,16 @@
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "NDTUploadViewController.h"
+#import "NDTTakeImageViewController.h"
+#import "NDTUploadController.h"
 
-@interface NDTUploadViewController ()
+@interface NDTTakeImageViewController ()
+
+@property (strong, nonatomic) NDTUploadController *uploadController;
 
 @end
 
-@implementation NDTUploadViewController
+@implementation NDTTakeImageViewController
 
 @synthesize imageView;
 
@@ -29,9 +32,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.nextButton.enabled = false;
     [self loadCamera];
-    
-    
+}
+
+- (NDTUploadController *) uploadController;
+{
+    if (!_uploadController){
+        _uploadController = (NDTUploadController *) self.navigationController;
+    }
+    return _uploadController;
 }
 
 - (void) loadCamera
@@ -52,16 +62,15 @@
     
 }
 
-// Automatically called after a imagePicker is selected
+// Automatically called after an image is selected
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    self.nextButton.enabled = false;
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    
     [self.imageView setImage:image];
+    [_uploadController setDocumentImage:image];
     [self dismissViewControllerAnimated:NO completion:nil];
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {

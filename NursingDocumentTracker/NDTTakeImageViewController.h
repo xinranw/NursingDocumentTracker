@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NDTUploadViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface NDTTakeImageViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (nonatomic,weak) IBOutlet UIImageView *imageView; 
+@property (nonatomic,strong) IBOutlet UIBarButtonItem *nextButton;
+
 
 @end
