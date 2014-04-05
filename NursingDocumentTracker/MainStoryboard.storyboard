@@ -351,7 +351,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="5Vc-7F-a5M"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Yrt-us-bbL">
                             <connections>
-                                <segue destination="yuu-15-jHZ" kind="push" id="qGJ-GX-wFe"/>
+                                <segue destination="w8F-3j-TBj" kind="push" id="39d-EV-eQA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -364,26 +364,36 @@
             </objects>
             <point key="canvasLocation" x="1801" y="-788"/>
         </scene>
-        <!--View Controller - Document Properties-->
-        <scene sceneID="VDs-dd-iXu">
+        <!--Upload Document View Controller-->
+        <scene sceneID="kWx-Mn-uym">
             <objects>
-                <viewController id="yuu-15-jHZ" sceneMemberID="viewController">
+                <viewController id="w8F-3j-TBj" customClass="NDTUploadDocumentViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="HRx-RL-nsR"/>
-                        <viewControllerLayoutGuide type="bottom" id="La7-3K-6oR"/>
+                        <viewControllerLayoutGuide type="top" id="QdF-1I-weh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ol0-xg-RSk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="q0w-1w-TPH">
+                    <view key="view" contentMode="scaleToFill" id="VDD-UL-n0S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma2-Sa-qB5">
+                                <rect key="frame" x="137" y="265" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadImage" destination="w8F-3j-TBj" eventType="touchUpInside" id="MVd-e8-soa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Document Properties" id="JDg-nG-aAd">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="L3h-cn-sVD"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="CF4-zC-X7U"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Idg-dr-fyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ene-nT-h86" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2219" y="-788"/>
+            <point key="canvasLocation" x="2192" y="-788"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

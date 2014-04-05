@@ -30,7 +30,6 @@
 - (void) setupUIPicker
 {
     _categoryArray = [[NSArray alloc] initWithObjects:@"Immunizations", @"Licenses", @"Certifications", @"CEUs", @"CV/Resume", @"Other", nil];
-
     _picker.delegate = self;
     _picker.dataSource = self;
     
@@ -63,7 +62,8 @@
 //    [self.navigationController pushViewController:objOtherViewController animated:YES];
     
     self.nextButton.enabled = true;
-    [_uploadController setDocumentCategory:[_categoryArray objectAtIndex:row]];
+    [_uploadController setDocumentCategory:(NDTDocumentCategory *)row];
+    NSLog(@"%d", (int) _uploadController.document.category);
 }
 
 - (void)didReceiveMemoryWarning

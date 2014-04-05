@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NDTDocumentCategory.h"
 
 @interface NDTDocument : NSObject
 
 @property (nonatomic,strong) UIImage *image;
-@property (nonatomic,strong) NSString *category;
+@property (nonatomic, assign) NDTDocumentCategory *category;
 @property (nonatomic,strong) NSMutableDictionary *properties;
 
 - (id) init;

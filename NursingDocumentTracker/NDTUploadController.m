@@ -55,12 +55,12 @@
     [_document addPropertyWithKey:key AndValue:value];
 }
 
-- (void) setDocumentCategory: (NSString *)category
+- (void) setDocumentCategory: (NDTDocumentCategory *)category
 {
     _document.category = category;
 }
 
-- (void) uploadImage
+- (void)uploadDocument
 {
     if (!_document){
         // TODO: fill in error here
@@ -91,7 +91,6 @@
             HUD = [[MBProgressHUD alloc] initWithView:self.view];
             [self.view addSubview:HUD];
             
-            // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
             // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
             HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
             
@@ -112,6 +111,7 @@
             
             [userPhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (!error) {
+                    NSLog(@"uploaded!");
 //                    [self refresh:nil];
                 }
                 else{

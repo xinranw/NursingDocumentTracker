@@ -40,6 +40,8 @@
 		CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */; };
 		CEFCDFD018EF8E8000E014D4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFCF18EF8E8000E014D4 /* MBProgressHUD.m */; };
 		CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD318EF92C100E014D4 /* NDTDocument.m */; };
+		CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */; };
+		CEFCDFDB18EFBDB800E014D4 /* NDTUploadDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,11 @@
 		CEFCDFCF18EF8E8000E014D4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CEFCDFD218EF92C100E014D4 /* NDTDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocument.h; sourceTree = "<group>"; };
 		CEFCDFD318EF92C100E014D4 /* NDTDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocument.m; sourceTree = "<group>"; };
+		CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTPropertiesViewController.h; sourceTree = "<group>"; };
+		CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTPropertiesViewController.m; sourceTree = "<group>"; };
+		CEFCDFD818EFB1C800E014D4 /* NDTDocumentCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocumentCategory.h; sourceTree = "<group>"; };
+		CEFCDFD918EFBDB800E014D4 /* NDTUploadDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadDocumentViewController.h; sourceTree = "<group>"; };
+		CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadDocumentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +165,10 @@
 		CE2FEE9018EF7FD40090CBC8 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCDFD918EFBDB800E014D4 /* NDTUploadDocumentViewController.h */,
+				CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */,
+				CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */,
+				CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */,
 				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
 				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
 				AA522D9918EA939B008C249B /* NDTTakeImageViewController.h */,
@@ -215,6 +226,7 @@
 				CEFCDFD118EF905700E014D4 /* MBProgressHUD */,
 				AAD7799218E1312600236485 /* View Controllers */,
 				AAD7798F18E1311700236485 /* Models */,
+				CEFCDFD818EFB1C800E014D4 /* NDTDocumentCategory.h */,
 				AAD7797718E130E200236485 /* NDTAppDelegate.h */,
 				AAD7797818E130E200236485 /* NDTAppDelegate.m */,
 				CE9D202218DCC2CB007FD7E3 /* Images.xcassets */,
@@ -362,11 +374,13 @@
 			files = (
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
+				CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */,
 				CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
 				CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
+				CEFCDFDB18EFBDB800E014D4 /* NDTUploadDocumentViewController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
 				CEFCDFD018EF8E8000E014D4 /* MBProgressHUD.m in Sources */,
 				AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */,
