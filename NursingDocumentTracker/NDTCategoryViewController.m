@@ -7,6 +7,7 @@
 //
 
 #import "NDTCategoryViewController.h"
+#import "NDTUploadController.h"
 
 @interface NDTCategoryViewController ()
 
@@ -20,6 +21,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.nextButton.enabled = false;
     [self setupUIPicker];
 }
 
@@ -58,6 +60,7 @@
 //    OtherViewController *objOtherViewController = [OtherViewController new];
 //    [self.navigationController pushViewController:objOtherViewController animated:YES];
     
+    self.nextButton.enabled = true;
 }
 
 - (void)didReceiveMemoryWarning

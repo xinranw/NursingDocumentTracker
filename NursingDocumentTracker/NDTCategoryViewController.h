@@ -11,5 +11,6 @@
 @interface NDTCategoryViewController : UIViewController <UINavigationControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (nonatomic,weak) IBOutlet UIPickerView *picker;
+@property (nonatomic,strong) IBOutlet UIBarButtonItem *nextButton;
 
 @end

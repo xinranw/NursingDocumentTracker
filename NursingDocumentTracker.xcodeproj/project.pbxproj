@@ -11,7 +11,7 @@
 		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
 		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
 		AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
-		AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9A18EA939B008C249B /* NDTUploadViewController.m */; };
+		AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9A18EA939B008C249B /* NDTTakeImageViewController.m */; };
 		AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3918EA69AE008DA57F /* Parse.framework */; };
 		AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */; };
 		AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3D18EA6A44008DA57F /* CFNetwork.framework */; };
@@ -23,6 +23,7 @@
 		AA851A4A18EA6A7A008DA57F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4918EA6A7A008DA57F /* StoreKit.framework */; };
 		AA851A4C18EA6A80008DA57F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */; };
 		CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */; };
+		CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */; };
 		CE9D200C18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */; };
 		CE9D200E18DCC2CB007FD7E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */; };
 		CE9D201018DCC2CB007FD7E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 		CE9D202D18DCC2CB007FD7E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D201118DCC2CB007FD7E3 /* CoreData.framework */; };
 		CE9D203518DCC2CB007FD7E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9D203318DCC2CB007FD7E3 /* InfoPlist.strings */; };
 		CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */; };
+		CEFCDFD018EF8E8000E014D4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFCF18EF8E8000E014D4 /* MBProgressHUD.m */; };
+		CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD318EF92C100E014D4 /* NDTDocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +59,8 @@
 		AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
 		AA522D8F18EA8C20008C249B /* NDTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTMainViewController.h; sourceTree = "<group>"; };
 		AA522D9018EA8C20008C249B /* NDTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTMainViewController.m; sourceTree = "<group>"; };
-		AA522D9918EA939B008C249B /* NDTUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadViewController.h; sourceTree = "<group>"; };
-		AA522D9A18EA939B008C249B /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadViewController.m; sourceTree = "<group>"; };
+		AA522D9918EA939B008C249B /* NDTTakeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTTakeImageViewController.h; sourceTree = "<group>"; };
+		AA522D9A18EA939B008C249B /* NDTTakeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTTakeImageViewController.m; sourceTree = "<group>"; };
 		AA851A3918EA69AE008DA57F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA851A3D18EA6A44008DA57F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -71,6 +74,8 @@
 		AAD7797718E130E200236485 /* NDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTAppDelegate.h; sourceTree = "<group>"; };
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
 		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CE2FEE9118EF80690090CBC8 /* NDTUploadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadController.h; sourceTree = "<group>"; };
+		CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadController.m; sourceTree = "<group>"; };
 		CE9D200818DCC2CB007FD7E3 /* NursingDocumentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingDocumentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +92,10 @@
 		CE9D203218DCC2CB007FD7E3 /* NursingDocumentTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NursingDocumentTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		CE9D203418DCC2CB007FD7E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NursingDocumentTrackerTests.m; sourceTree = "<group>"; };
+		CEFCDFCE18EF8E8000E014D4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		CEFCDFCF18EF8E8000E014D4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		CEFCDFD218EF92C100E014D4 /* NDTDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocument.h; sourceTree = "<group>"; };
+		CEFCDFD318EF92C100E014D4 /* NDTDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,8 @@
 		AAD7798F18E1311700236485 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCDFD218EF92C100E014D4 /* NDTDocument.h */,
+				CEFCDFD318EF92C100E014D4 /* NDTDocument.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -135,16 +146,26 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE2FEE9018EF7FD40090CBC8 /* Upload */,
 				AA522D8F18EA8C20008C249B /* NDTMainViewController.h */,
 				AA522D9018EA8C20008C249B /* NDTMainViewController.m */,
 				AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */,
 				AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */,
-				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
-				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
-				AA522D9918EA939B008C249B /* NDTUploadViewController.h */,
-				AA522D9A18EA939B008C249B /* NDTUploadViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE2FEE9018EF7FD40090CBC8 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
+				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
+				AA522D9918EA939B008C249B /* NDTTakeImageViewController.h */,
+				AA522D9A18EA939B008C249B /* NDTTakeImageViewController.m */,
+				CE2FEE9118EF80690090CBC8 /* NDTUploadController.h */,
+				CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */,
+			);
+			name = Upload;
 			sourceTree = "<group>";
 		};
 		CE9D1FFF18DCC2CB007FD7E3 = {
@@ -191,6 +212,7 @@
 		CE9D201318DCC2CB007FD7E3 /* NursingDocumentTracker */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCDFD118EF905700E014D4 /* MBProgressHUD */,
 				AAD7799218E1312600236485 /* View Controllers */,
 				AAD7798F18E1311700236485 /* Models */,
 				AAD7797718E130E200236485 /* NDTAppDelegate.h */,
@@ -230,6 +252,15 @@
 				CE9D203318DCC2CB007FD7E3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFCDFD118EF905700E014D4 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CEFCDFCE18EF8E8000E014D4 /* MBProgressHUD.h */,
+				CEFCDFCF18EF8E8000E014D4 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,11 +362,14 @@
 			files = (
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
+				CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
+				CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
-				AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */,
+				CEFCDFD018EF8E8000E014D4 /* MBProgressHUD.m in Sources */,
+				AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
