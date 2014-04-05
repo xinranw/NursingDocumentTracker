@@ -10,7 +10,8 @@
 
 @interface NDTTakeImageViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
-@property (nonatomic,weak) IBOutlet UIImageView *imageView; 
+@property (nonatomic,weak) IBOutlet UIImageView *imageView;
+@property (nonatomic,strong) IBOutlet UIButton *takeImageButton;
 @property (nonatomic,strong) IBOutlet UIBarButtonItem *nextButton;
 
 

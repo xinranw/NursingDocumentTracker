@@ -32,8 +32,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.nextButton.enabled = false;
-    [self loadCamera];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    if (!self.imageView.image){
+        self.nextButton.enabled = false;
+    } else {
+        self.nextButton.enabled = true;
+    }
+    [self.takeImageButton addTarget:self action:@selector(loadCamera:) forControlEvents:UIControlEventTouchUpInside];
+    [self loadCamera:nil];
 }
 
 - (NDTUploadController *) uploadController;
@@ -44,7 +50,7 @@
     return _uploadController;
 }
 
-- (void) loadCamera
+- (void) loadCamera:(id)sender
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     
@@ -62,11 +68,13 @@
     
 }
 
+
 // Automatically called after an image is selected
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    self.nextButton.enabled = false;
+    self.nextButton.enabled = true;
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
     [self.imageView setImage:image];
     [_uploadController setDocumentImage:image];
     [self dismissViewControllerAnimated:NO completion:nil];
