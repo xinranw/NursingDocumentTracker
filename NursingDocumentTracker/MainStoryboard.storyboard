@@ -303,8 +303,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="d6o-iw-hgS"/>
                     <navigationItem key="navigationItem" title="Take Picture" id="BHj-0D-ISO">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="OEs-ea-bbl"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="gjy-CQ-hku">
                             <connections>
                                 <segue destination="zUd-yr-HdW" kind="push" id="qAw-GI-Vim"/>
@@ -348,6 +348,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Category" id="P8E-0q-xvw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="5Vc-7F-a5M"/>
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Yrt-us-bbL">
                             <connections>
                                 <segue destination="yuu-15-jHZ" kind="push" id="qGJ-GX-wFe"/>
@@ -363,7 +364,7 @@
             </objects>
             <point key="canvasLocation" x="1801" y="-788"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Document Properties-->
         <scene sceneID="VDs-dd-iXu">
             <objects>
                 <viewController id="yuu-15-jHZ" sceneMemberID="viewController">
@@ -376,7 +377,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JDg-nG-aAd"/>
+                    <navigationItem key="navigationItem" title="Document Properties" id="JDg-nG-aAd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="L3h-cn-sVD"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Idg-dr-fyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
