@@ -7,6 +7,7 @@
 //
 
 #import "NDTMainViewController.h"
+#import "NDTLogInViewController.h"
 
 @interface NDTMainViewController ()
 
@@ -38,7 +39,7 @@
 
 - (void)presentLogInViewController
 {
-    PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+    NDTLogInViewController *logInViewController = [[NDTLogInViewController alloc] init];
     [logInViewController setDelegate:self];
     logInViewController.fields = PFLogInFieldsUsernameAndPassword |
                                  PFLogInFieldsLogInButton |

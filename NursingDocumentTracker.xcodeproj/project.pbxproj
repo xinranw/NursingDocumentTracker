@@ -12,6 +12,7 @@
 		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
 		AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
 		AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9A18EA939B008C249B /* NDTUploadViewController.m */; };
+		AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7D13E518F2449700A1731D /* NDTLogInViewController.m */; };
 		AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3918EA69AE008DA57F /* Parse.framework */; };
 		AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */; };
 		AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3D18EA6A44008DA57F /* CFNetwork.framework */; };
@@ -58,6 +59,8 @@
 		AA522D9018EA8C20008C249B /* NDTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTMainViewController.m; sourceTree = "<group>"; };
 		AA522D9918EA939B008C249B /* NDTUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadViewController.h; sourceTree = "<group>"; };
 		AA522D9A18EA939B008C249B /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadViewController.m; sourceTree = "<group>"; };
+		AA7D13E418F2449700A1731D /* NDTLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTLogInViewController.h; sourceTree = "<group>"; };
+		AA7D13E518F2449700A1731D /* NDTLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTLogInViewController.m; sourceTree = "<group>"; };
 		AA851A3918EA69AE008DA57F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA851A3D18EA6A44008DA57F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -71,7 +74,7 @@
 		AAD7797718E130E200236485 /* NDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTAppDelegate.h; sourceTree = "<group>"; };
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
 		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CE9D200818DCC2CB007FD7E3 /* NursingDocumentTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NursingDocumentTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dr. Doc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -143,6 +146,8 @@
 				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
 				AA522D9918EA939B008C249B /* NDTUploadViewController.h */,
 				AA522D9A18EA939B008C249B /* NDTUploadViewController.m */,
+				AA7D13E418F2449700A1731D /* NDTLogInViewController.h */,
+				AA7D13E518F2449700A1731D /* NDTLogInViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -160,7 +165,7 @@
 		CE9D200918DCC2CB007FD7E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D200818DCC2CB007FD7E3 /* NursingDocumentTracker.app */,
+				CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */,
 				CE9D202818DCC2CB007FD7E3 /* NursingDocumentTrackerTests.xctest */,
 			);
 			name = Products;
@@ -249,7 +254,7 @@
 			);
 			name = NursingDocumentTracker;
 			productName = NursingDocumentTracker;
-			productReference = CE9D200818DCC2CB007FD7E3 /* NursingDocumentTracker.app */;
+			productReference = CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CE9D202718DCC2CB007FD7E3 /* NursingDocumentTrackerTests */ = {
@@ -332,6 +337,7 @@
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
+				AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
@@ -458,7 +464,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dr. Doc";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -475,7 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dr. Doc";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
