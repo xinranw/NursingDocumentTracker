@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		388BDE66AF3F476BAD1DC028 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9967E7CB0420AB36A6C82 /* libPods.a */; };
 		AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9018EA8C20008C249B /* NDTMainViewController.m */; };
 		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
 		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
 		AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD7797818E130E200236485 /* NDTAppDelegate.m */; };
 		AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9A18EA939B008C249B /* NDTUploadViewController.m */; };
 		AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7D13E518F2449700A1731D /* NDTLogInViewController.m */; };
+		AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9A18EA939B008C249B /* NDTTakeImageViewController.m */; };
 		AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3918EA69AE008DA57F /* Parse.framework */; };
 		AA851A3C18EA6A3E008DA57F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */; };
 		AA851A3E18EA6A44008DA57F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A3D18EA6A44008DA57F /* CFNetwork.framework */; };
@@ -24,6 +26,7 @@
 		AA851A4A18EA6A7A008DA57F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4918EA6A7A008DA57F /* StoreKit.framework */; };
 		AA851A4C18EA6A80008DA57F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */; };
 		CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */; };
+		CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */; };
 		CE9D200C18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */; };
 		CE9D200E18DCC2CB007FD7E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */; };
 		CE9D201018DCC2CB007FD7E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */; };
@@ -38,6 +41,9 @@
 		CE9D202D18DCC2CB007FD7E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D201118DCC2CB007FD7E3 /* CoreData.framework */; };
 		CE9D203518DCC2CB007FD7E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9D203318DCC2CB007FD7E3 /* InfoPlist.strings */; };
 		CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */; };
+		CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD318EF92C100E014D4 /* NDTDocument.m */; };
+		CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */; };
+		CEFCDFDB18EFBDB800E014D4 /* NDTUploadDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,8 @@
 /* Begin PBXFileReference section */
 		1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCategoryViewController.h; sourceTree = "<group>"; };
 		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
+		33D9967E7CB0420AB36A6C82 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		753898DB1E224003B4AD46C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
 		AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
 		AA522D8F18EA8C20008C249B /* NDTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTMainViewController.h; sourceTree = "<group>"; };
@@ -61,6 +69,8 @@
 		AA522D9A18EA939B008C249B /* NDTUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadViewController.m; sourceTree = "<group>"; };
 		AA7D13E418F2449700A1731D /* NDTLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTLogInViewController.h; sourceTree = "<group>"; };
 		AA7D13E518F2449700A1731D /* NDTLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTLogInViewController.m; sourceTree = "<group>"; };
+		AA522D9918EA939B008C249B /* NDTTakeImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTTakeImageViewController.h; sourceTree = "<group>"; };
+		AA522D9A18EA939B008C249B /* NDTTakeImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTTakeImageViewController.m; sourceTree = "<group>"; };
 		AA851A3918EA69AE008DA57F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		AA851A3B18EA6A3E008DA57F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AA851A3D18EA6A44008DA57F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -75,6 +85,8 @@
 		AAD7797818E130E200236485 /* NDTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTAppDelegate.m; sourceTree = "<group>"; };
 		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dr. Doc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2FEE9118EF80690090CBC8 /* NDTUploadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadController.h; sourceTree = "<group>"; };
+		CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadController.m; sourceTree = "<group>"; };
 		CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +102,13 @@
 		CE9D203218DCC2CB007FD7E3 /* NursingDocumentTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NursingDocumentTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		CE9D203418DCC2CB007FD7E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NursingDocumentTrackerTests.m; sourceTree = "<group>"; };
+		CEFCDFD218EF92C100E014D4 /* NDTDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocument.h; sourceTree = "<group>"; };
+		CEFCDFD318EF92C100E014D4 /* NDTDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocument.m; sourceTree = "<group>"; };
+		CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTPropertiesViewController.h; sourceTree = "<group>"; };
+		CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTPropertiesViewController.m; sourceTree = "<group>"; };
+		CEFCDFD818EFB1C800E014D4 /* NDTDocumentCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocumentCategory.h; sourceTree = "<group>"; };
+		CEFCDFD918EFBDB800E014D4 /* NDTUploadDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadDocumentViewController.h; sourceTree = "<group>"; };
+		CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadDocumentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +130,7 @@
 				CE9D201018DCC2CB007FD7E3 /* UIKit.framework in Frameworks */,
 				CE9D200C18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */,
 				AA851A3A18EA69AE008DA57F /* Parse.framework in Frameworks */,
+				388BDE66AF3F476BAD1DC028 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +151,8 @@
 		AAD7798F18E1311700236485 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEFCDFD218EF92C100E014D4 /* NDTDocument.h */,
+				CEFCDFD318EF92C100E014D4 /* NDTDocument.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -138,18 +160,34 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE2FEE9018EF7FD40090CBC8 /* Upload */,
 				AA522D8F18EA8C20008C249B /* NDTMainViewController.h */,
 				AA522D9018EA8C20008C249B /* NDTMainViewController.m */,
 				AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */,
 				AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE2FEE9018EF7FD40090CBC8 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				CEFCDFD918EFBDB800E014D4 /* NDTUploadDocumentViewController.h */,
+				CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */,
+				CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */,
+				CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */,
 				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
 				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
 				AA522D9918EA939B008C249B /* NDTUploadViewController.h */,
 				AA522D9A18EA939B008C249B /* NDTUploadViewController.m */,
 				AA7D13E418F2449700A1731D /* NDTLogInViewController.h */,
 				AA7D13E518F2449700A1731D /* NDTLogInViewController.m */,
-			);
-			name = "View Controllers";
+				AA522D9918EA939B008C249B /* NDTTakeImageViewController.h */,
+				AA522D9A18EA939B008C249B /* NDTTakeImageViewController.m */,
+				CE2FEE9118EF80690090CBC8 /* NDTUploadController.h */,
+				CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */,
+	);
+			name = Upload;
 			sourceTree = "<group>";
 		};
 		CE9D1FFF18DCC2CB007FD7E3 = {
@@ -159,6 +197,7 @@
 				CE9D203018DCC2CB007FD7E3 /* NursingDocumentTrackerTests */,
 				CE9D200A18DCC2CB007FD7E3 /* Frameworks */,
 				CE9D200918DCC2CB007FD7E3 /* Products */,
+				753898DB1E224003B4AD46C8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +228,7 @@
 				CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */,
 				CE9D201118DCC2CB007FD7E3 /* CoreData.framework */,
 				CE9D202918DCC2CB007FD7E3 /* XCTest.framework */,
+				33D9967E7CB0420AB36A6C82 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +238,7 @@
 			children = (
 				AAD7799218E1312600236485 /* View Controllers */,
 				AAD7798F18E1311700236485 /* Models */,
+				CEFCDFD818EFB1C800E014D4 /* NDTDocumentCategory.h */,
 				AAD7797718E130E200236485 /* NDTAppDelegate.h */,
 				AAD7797818E130E200236485 /* NDTAppDelegate.m */,
 				CE9D202218DCC2CB007FD7E3 /* Images.xcassets */,
@@ -244,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9D203A18DCC2CB007FD7E3 /* Build configuration list for PBXNativeTarget "NursingDocumentTracker" */;
 			buildPhases = (
+				80CE40DF450B4B7B8F5F102F /* Check Pods Manifest.lock */,
 				CE9D200418DCC2CB007FD7E3 /* Sources */,
 				CE9D200518DCC2CB007FD7E3 /* Frameworks */,
 				CE9D200618DCC2CB007FD7E3 /* Resources */,
+				C08036BE88224402994EB884 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +372,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80CE40DF450B4B7B8F5F102F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C08036BE88224402994EB884 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE9D200418DCC2CB007FD7E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -336,12 +412,16 @@
 			files = (
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
+				CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */,
+				CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
+				CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
+				CEFCDFDB18EFBDB800E014D4 /* NDTUploadDocumentViewController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
-				AA522D9B18EA939B008C249B /* NDTUploadViewController.m in Sources */,
+				AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */,
 				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +534,7 @@
 		};
 		CE9D203B18DCC2CB007FD7E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753898DB1E224003B4AD46C8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -471,6 +552,7 @@
 		};
 		CE9D203C18DCC2CB007FD7E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753898DB1E224003B4AD46C8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

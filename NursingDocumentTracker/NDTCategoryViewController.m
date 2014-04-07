@@ -7,9 +7,11 @@
 //
 
 #import "NDTCategoryViewController.h"
+#import "NDTUploadController.h"
 
 @interface NDTCategoryViewController ()
 
+@property (strong, nonatomic) NDTUploadController *uploadController;
 @property (strong, nonatomic) NSArray *categoryArray;
 
 @end
@@ -20,13 +22,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _uploadController = (NDTUploadController *) self.navigationController;
+    self.nextButton.enabled = false;
     [self setupUIPicker];
 }
 
 - (void) setupUIPicker
 {
     _categoryArray = [[NSArray alloc] initWithObjects:@"Immunizations", @"Licenses", @"Certifications", @"CEUs", @"CV/Resume", @"Other", nil];
-
     _picker.delegate = self;
     _picker.dataSource = self;
     
@@ -58,6 +61,9 @@
 //    OtherViewController *objOtherViewController = [OtherViewController new];
 //    [self.navigationController pushViewController:objOtherViewController animated:YES];
     
+    self.nextButton.enabled = true;
+    [_uploadController setDocumentCategory:(NDTDocumentCategory *)row];
+    NSLog(@"%d", (int) _uploadController.document.category);
 }
 
 - (void)didReceiveMemoryWarning

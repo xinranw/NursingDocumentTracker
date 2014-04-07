@@ -6,13 +6,16 @@
 //  Copyright (c) 2014 CIS350. All rights reserved.
 //
 
-#import "NDTUploadViewController.h"
+#import "NDTTakeImageViewController.h"
+#import "NDTUploadController.h"
 
-@interface NDTUploadViewController ()
+@interface NDTTakeImageViewController ()
+
+@property (strong, nonatomic) NDTUploadController *uploadController;
 
 @end
 
-@implementation NDTUploadViewController
+@implementation NDTTakeImageViewController
 
 @synthesize imageView;
 
@@ -29,12 +32,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [self loadCamera];
     
-    
+    _uploadController = (NDTUploadController *) self.navigationController;    
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    if (!self.imageView.image){
+        self.nextButton.enabled = false;
+    } else {
+        self.nextButton.enabled = true;
+    }
+    [self.takeImageButton addTarget:self action:@selector(loadCamera:) forControlEvents:UIControlEventTouchUpInside];
+    [self loadCamera:nil];
 }
 
-- (void) loadCamera
+- (void) loadCamera:(id)sender
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     
@@ -49,19 +59,19 @@
     [imagePicker setDelegate:self];
     
     [self presentViewController:imagePicker animated:YES completion: nil];
-    
 }
 
-// Automatically called after a imagePicker is selected
+
+// Automatically called after an image is selected
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    self.nextButton.enabled = true;
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
     [self.imageView setImage:image];
+    [_uploadController setDocumentImage:image];
     [self dismissViewControllerAnimated:NO completion:nil];
 }
-
-
 
 - (void)didReceiveMemoryWarning
 {
