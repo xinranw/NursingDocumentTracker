@@ -82,6 +82,7 @@
 -(void) buttonClicked:(id)sender
 {
     NSLog(@"you clicked on button %@", sender);
+    [self performSegueWithIdentifier:@"CategoryListingSegue" sender:self];
 }
 
 - (IBAction)logoutButtonTapAction:(id)sender

@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setSelectedIndex:1];
+    [self setSelectedIndex:2];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
