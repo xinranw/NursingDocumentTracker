@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3040E018F3067700DAAC4D /* NursingDocumentTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */; };
+		1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */; };
+		1B8A5EB118F3AD4100D9D21C /* NDTUploadCertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB018F3AD4100D9D21C /* NDTUploadCertificationViewController.m */; };
+		1B8A5EB418F3AE7000D9D21C /* NDTUploadCEUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB318F3AE7000D9D21C /* NDTUploadCEUViewController.m */; };
+		1B8A5EB718F3BB8D00D9D21C /* NDTUploadResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB618F3BB8D00D9D21C /* NDTUploadResumeViewController.m */; };
+		1B8A5EBA18F3BDC700D9D21C /* NDTUploadOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB918F3BDC700D9D21C /* NDTUploadOtherViewController.m */; };
 		388BDE66AF3F476BAD1DC028 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9967E7CB0420AB36A6C82 /* libPods.a */; };
 		AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9018EA8C20008C249B /* NDTMainViewController.m */; };
 		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
@@ -32,7 +38,6 @@
 		CE9D201218DCC2CB007FD7E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D201118DCC2CB007FD7E3 /* CoreData.framework */; };
 		CE9D201818DCC2CB007FD7E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9D201618DCC2CB007FD7E3 /* InfoPlist.strings */; };
 		CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D201918DCC2CB007FD7E3 /* main.m */; };
-		CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */; };
 		CE9D202318DCC2CB007FD7E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D202218DCC2CB007FD7E3 /* Images.xcassets */; };
 		CE9D202A18DCC2CB007FD7E3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D202918DCC2CB007FD7E3 /* XCTest.framework */; };
 		CE9D202B18DCC2CB007FD7E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */; };
@@ -42,7 +47,7 @@
 		CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */; };
 		CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD318EF92C100E014D4 /* NDTDocument.m */; };
 		CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */; };
-		CEFCDFDB18EFBDB800E014D4 /* NDTUploadDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */; };
+		CEFCDFDB18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFDA18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,16 @@
 /* Begin PBXFileReference section */
 		1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCategoryViewController.h; sourceTree = "<group>"; };
 		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
+		1B8A5EAC18F3AB0000D9D21C /* NDTUploadLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadLicenseViewController.h; sourceTree = "<group>"; };
+		1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadLicenseViewController.m; sourceTree = "<group>"; };
+		1B8A5EAF18F3AD4100D9D21C /* NDTUploadCertificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadCertificationViewController.h; sourceTree = "<group>"; };
+		1B8A5EB018F3AD4100D9D21C /* NDTUploadCertificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadCertificationViewController.m; sourceTree = "<group>"; };
+		1B8A5EB218F3AE7000D9D21C /* NDTUploadCEUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadCEUViewController.h; sourceTree = "<group>"; };
+		1B8A5EB318F3AE7000D9D21C /* NDTUploadCEUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadCEUViewController.m; sourceTree = "<group>"; };
+		1B8A5EB518F3BB8D00D9D21C /* NDTUploadResumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadResumeViewController.h; sourceTree = "<group>"; };
+		1B8A5EB618F3BB8D00D9D21C /* NDTUploadResumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadResumeViewController.m; sourceTree = "<group>"; };
+		1B8A5EB818F3BDC700D9D21C /* NDTUploadOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadOtherViewController.h; sourceTree = "<group>"; };
+		1B8A5EB918F3BDC700D9D21C /* NDTUploadOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadOtherViewController.m; sourceTree = "<group>"; };
 		33D9967E7CB0420AB36A6C82 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		753898DB1E224003B4AD46C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
@@ -104,8 +119,8 @@
 		CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTPropertiesViewController.h; sourceTree = "<group>"; };
 		CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTPropertiesViewController.m; sourceTree = "<group>"; };
 		CEFCDFD818EFB1C800E014D4 /* NDTDocumentCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocumentCategory.h; sourceTree = "<group>"; };
-		CEFCDFD918EFBDB800E014D4 /* NDTUploadDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadDocumentViewController.h; sourceTree = "<group>"; };
-		CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadDocumentViewController.m; sourceTree = "<group>"; };
+		CEFCDFD918EFBDB800E014D4 /* NDTUploadImmunizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadImmunizationViewController.h; sourceTree = "<group>"; };
+		CEFCDFDA18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadImmunizationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +184,18 @@
 		CE2FEE9018EF7FD40090CBC8 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
-				CEFCDFD918EFBDB800E014D4 /* NDTUploadDocumentViewController.h */,
-				CEFCDFDA18EFBDB800E014D4 /* NDTUploadDocumentViewController.m */,
+				CEFCDFD918EFBDB800E014D4 /* NDTUploadImmunizationViewController.h */,
+				CEFCDFDA18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m */,
+				1B8A5EAC18F3AB0000D9D21C /* NDTUploadLicenseViewController.h */,
+				1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */,
+				1B8A5EAF18F3AD4100D9D21C /* NDTUploadCertificationViewController.h */,
+				1B8A5EB018F3AD4100D9D21C /* NDTUploadCertificationViewController.m */,
+				1B8A5EB218F3AE7000D9D21C /* NDTUploadCEUViewController.h */,
+				1B8A5EB318F3AE7000D9D21C /* NDTUploadCEUViewController.m */,
+				1B8A5EB518F3BB8D00D9D21C /* NDTUploadResumeViewController.h */,
+				1B8A5EB618F3BB8D00D9D21C /* NDTUploadResumeViewController.m */,
+				1B8A5EB818F3BDC700D9D21C /* NDTUploadOtherViewController.h */,
+				1B8A5EB918F3BDC700D9D21C /* NDTUploadOtherViewController.m */,
 				CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */,
 				CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */,
 				1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */,
@@ -325,6 +350,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = CIS350;
 				TargetAttributes = {
+					CE9D200718DCC2CB007FD7E3 = {
+						DevelopmentTeam = 4A46LHQ49H;
+					};
 					CE9D202718DCC2CB007FD7E3 = {
 						TestTargetID = CE9D200718DCC2CB007FD7E3;
 					};
@@ -407,19 +435,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8A5EBA18F3BDC700D9D21C /* NDTUploadOtherViewController.m in Sources */,
+				1B3040E018F3067700DAAC4D /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
 				CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */,
 				CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */,
+				1B8A5EB718F3BB8D00D9D21C /* NDTUploadResumeViewController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
 				CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */,
-				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
-				CEFCDFDB18EFBDB800E014D4 /* NDTUploadDocumentViewController.m in Sources */,
+				CEFCDFDB18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
+				1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */,
 				AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */,
-				CE9D202118DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld in Sources */,
+				1B8A5EB418F3AE7000D9D21C /* NDTUploadCEUViewController.m in Sources */,
+				1B8A5EB118F3AD4100D9D21C /* NDTUploadCertificationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +567,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -543,6 +577,7 @@
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
 				PRODUCT_NAME = "Dr. Doc";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -553,6 +588,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -561,6 +598,7 @@
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
 				PRODUCT_NAME = "Dr. Doc";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
