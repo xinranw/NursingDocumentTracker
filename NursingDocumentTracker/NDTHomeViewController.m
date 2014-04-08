@@ -8,6 +8,7 @@
 
 #import "NDTMainViewController.h"
 #import "NDTHomeViewController.h"
+#import "NDTDocumentListViewController.h"
 
 @interface NDTHomeViewController ()
 
@@ -82,7 +83,12 @@
 -(void) buttonClicked:(id)sender
 {
     NSLog(@"you clicked on button %@", sender);
-    [self performSegueWithIdentifier:@"CategoryListingSegue" sender:self];
+//    [self performSegueWithIdentifier:@"CategoryListingSegue" sender:self];
+    
+    NDTDocumentListViewController *documentList =
+        [[NDTDocumentListViewController alloc] init];
+    
+    [self.navigationController pushViewController:documentList animated:YES];
 }
 
 - (IBAction)logoutButtonTapAction:(id)sender
