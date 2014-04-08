@@ -14,6 +14,8 @@
 		1B8A5EB718F3BB8D00D9D21C /* NDTUploadResumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB618F3BB8D00D9D21C /* NDTUploadResumeViewController.m */; };
 		1B8A5EBA18F3BDC700D9D21C /* NDTUploadOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB918F3BDC700D9D21C /* NDTUploadOtherViewController.m */; };
 		388BDE66AF3F476BAD1DC028 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D9967E7CB0420AB36A6C82 /* libPods.a */; };
+		539DF00718F3C95F0030396B /* NDTMainViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 539DF00618F3C95F0030396B /* NDTMainViewControllerTest.m */; };
+		539DF00918F3D0CD0030396B /* NDTDocumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 539DF00818F3D0CD0030396B /* NDTDocumentTest.m */; };
 		AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9018EA8C20008C249B /* NDTMainViewController.m */; };
 		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
 		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
@@ -45,7 +47,6 @@
 		CE9D202C18DCC2CB007FD7E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */; };
 		CE9D202D18DCC2CB007FD7E3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9D201118DCC2CB007FD7E3 /* CoreData.framework */; };
 		CE9D203518DCC2CB007FD7E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9D203318DCC2CB007FD7E3 /* InfoPlist.strings */; };
-		CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */; };
 		CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD318EF92C100E014D4 /* NDTDocument.m */; };
 		CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFD618EFB0CB00E014D4 /* NDTPropertiesViewController.m */; };
 		CEFCDFDB18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFCDFDA18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m */; };
@@ -75,6 +76,8 @@
 		1B8A5EB818F3BDC700D9D21C /* NDTUploadOtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadOtherViewController.h; sourceTree = "<group>"; };
 		1B8A5EB918F3BDC700D9D21C /* NDTUploadOtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadOtherViewController.m; sourceTree = "<group>"; };
 		33D9967E7CB0420AB36A6C82 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		539DF00618F3C95F0030396B /* NDTMainViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTMainViewControllerTest.m; sourceTree = "<group>"; };
+		539DF00818F3D0CD0030396B /* NDTDocumentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocumentTest.m; sourceTree = "<group>"; };
 		753898DB1E224003B4AD46C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
 		AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
@@ -116,7 +119,6 @@
 		CE9D202918DCC2CB007FD7E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE9D203218DCC2CB007FD7E3 /* NursingDocumentTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NursingDocumentTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		CE9D203418DCC2CB007FD7E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NursingDocumentTrackerTests.m; sourceTree = "<group>"; };
 		CEFCDFD218EF92C100E014D4 /* NDTDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocument.h; sourceTree = "<group>"; };
 		CEFCDFD318EF92C100E014D4 /* NDTDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocument.m; sourceTree = "<group>"; };
 		CEFCDFD518EFB0CB00E014D4 /* NDTPropertiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTPropertiesViewController.h; sourceTree = "<group>"; };
@@ -290,7 +292,8 @@
 		CE9D203018DCC2CB007FD7E3 /* NursingDocumentTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D203618DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m */,
+				539DF00818F3D0CD0030396B /* NDTDocumentTest.m */,
+				539DF00618F3C95F0030396B /* NDTMainViewControllerTest.m */,
 				CE9D203118DCC2CB007FD7E3 /* Supporting Files */,
 			);
 			path = NursingDocumentTrackerTests;
@@ -466,7 +469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9D203718DCC2CB007FD7E3 /* NursingDocumentTrackerTests.m in Sources */,
+				539DF00718F3C95F0030396B /* NDTMainViewControllerTest.m in Sources */,
+				539DF00918F3D0CD0030396B /* NDTDocumentTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +507,8 @@
 		CE9D203818DCC2CB007FD7E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -534,13 +539,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
 		};
 		CE9D203918DCC2CB007FD7E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -564,6 +571,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
