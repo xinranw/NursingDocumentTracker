@@ -13,4 +13,6 @@
 @property (nonatomic,weak) IBOutlet UIPickerView *picker;
 @property (nonatomic,strong) IBOutlet UIBarButtonItem *nextButton;
 
+- (IBAction) chooseController;
+
 @end

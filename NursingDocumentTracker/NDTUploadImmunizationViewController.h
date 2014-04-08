@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NDTUploadDocumentViewController : UIViewController
+@interface NDTUploadImmunizationViewController : UIViewController <UITextFieldDelegate> {
+    IBOutlet UITextField *titleField;
+    IBOutlet UITextField *dateField;
+}
 
 - (IBAction) uploadImage;
+
 
 @end

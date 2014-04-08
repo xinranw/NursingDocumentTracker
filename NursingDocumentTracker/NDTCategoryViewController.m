@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) NDTUploadController *uploadController;
 @property (strong, nonatomic) NSArray *categoryArray;
+@property (nonatomic,strong) NSString *category;
 
 @end
 
@@ -26,6 +27,7 @@
     self.nextButton.enabled = false;
     [self setupUIPicker];
 }
+
 
 - (void) setupUIPicker
 {
@@ -63,13 +65,17 @@
     
     self.nextButton.enabled = true;
     [_uploadController setDocumentCategory:(NDTDocumentCategory *)row];
-    NSLog(@"%d", (int) _uploadController.document.category);
+   // NSLog(@"%d", (int) _uploadController.document.category);
+    _category = [NSString stringWithFormat:@"%d",(int)_uploadController.document.category];
+
+    [self performSegueWithIdentifier:_category sender:self];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction) chooseController
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(_category);
+    [self performSegueWithIdentifier:_category sender:self];
 }
+
 
 @end
