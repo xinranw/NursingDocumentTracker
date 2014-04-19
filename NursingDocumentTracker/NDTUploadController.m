@@ -38,7 +38,7 @@
 - (NDTDocument *) document
 {
     if (!_document){
-        [_document init];
+        (void) [_document init];
     }
 
     return _document;
@@ -129,6 +129,16 @@
         // Update your progress spinner here. percentDone will be between 0 and 100.
         HUD.progress = (float)percentDone/100;
     }];
+}
+
+// why is it so much work to just get the date one year from now?
+- (NSDate *) dateOneYearFromNow
+{
+    NSDate *currentDate = [NSDate date];
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    [comps setYear:1];
+    return [gregorian dateByAddingComponents:comps toDate:currentDate  options:0];
 }
 
 - (NSString *) description

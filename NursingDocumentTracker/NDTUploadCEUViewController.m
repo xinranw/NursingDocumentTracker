@@ -108,6 +108,10 @@
         }
     }
     
+    titleField.delegate = self;
+    dateField.delegate = self;
+    providerField.delegate = self;
+    numberField.delegate = self;
 }
 
 - (void) pickerChanged:(id)sender
@@ -169,16 +173,41 @@
 
 - (IBAction) uploadImage
 {
+    if ([titleField.text isEqualToString: @""]) {
+        titleField.text = @"CEUDoc1";
+    }
+    if ([dateField.text isEqualToString: @""]) {
+        _date = [NSDate date];
+    }
+    if ([providerField.text isEqualToString: @""] || [numberField.text isEqualToString: @""]) {
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Missing Information", nil)
+                                    message:NSLocalizedString(@"Make sure you fill out all of the information!", nil)
+                                   delegate:nil
+                          cancelButtonTitle:NSLocalizedString(@"OK", nil)
+                          otherButtonTitles:nil] show];
+        return;
+    }
+    
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
     [_uploadController addDocumentPropertyWithKey:@"date" AndValue:(NSData *)_date];
     [_uploadController addDocumentPropertyWithKey:@"provider" AndValue:(NSData *) providerField.text];
     [_uploadController addDocumentPropertyWithKey:@"number" AndValue:(NSData *) numberField.text];
-    _uploadController.uploadDocument;
+    [_uploadController uploadDocument];
     
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 
 @end

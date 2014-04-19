@@ -21,18 +21,31 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    titleField.delegate = self;
 }
 
 - (IBAction) uploadImage
 {
+    if ([titleField.text isEqualToString: @""]) {
+        titleField.text = @"OtherDoc1";
+    }
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
-    _uploadController.uploadDocument;
+    [_uploadController uploadDocument];
     
     
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 
 /*
 #pragma mark - Navigation

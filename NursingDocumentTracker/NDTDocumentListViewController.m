@@ -14,7 +14,8 @@
     self = [super initWithStyle:style];
     if (self) {
         self.parseClassName = @"UserPhoto";
-        self.textKey = @"name";
+        NSLog(@"%@", @"title");
+        self.textKey = @"title";
         self.imageKey = @"imageFile";
         self.pullToRefreshEnabled = NO;
         self.paginationEnabled = YES;

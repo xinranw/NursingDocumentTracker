@@ -35,8 +35,8 @@
     
     dateField.inputView = myDatePicker;
     
-    
-
+    titleField.delegate = self;
+    dateField.delegate = self;
 }
 
 - (void) pickerChanged:(id)sender
@@ -53,12 +53,30 @@
 
 - (IBAction) uploadImage
 {
+    if ([titleField.text isEqualToString: @""]) {
+        titleField.text = @"ImmunizationDoc1";
+    }
+    if ([dateField.text isEqualToString: @""]) {
+        _expirationDate = [_uploadController dateOneYearFromNow];
+    }
+    
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
     [_uploadController addDocumentPropertyWithKey:@"expiration" AndValue:(NSData *)_expirationDate];
-    _uploadController.uploadDocument;
+    [_uploadController uploadDocument];
     
     
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 @end

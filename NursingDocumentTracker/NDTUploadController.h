@@ -21,10 +21,10 @@
 @property (strong, nonatomic) NDTDocument *document;
 @property (strong, nonatomic) UIBarButtonItem *testButton;
 
-
 - (void) setDocumentImage: (UIImage *)image;
 - (void) setDocumentCategory: (NDTDocumentCategory *) category;
 - (void) uploadDocument;
 - (void) addDocumentPropertyWithKey: (NSString *)key AndValue: (NSData *) value;
+- (NSDate *) dateOneYearFromNow;
 
 @end
