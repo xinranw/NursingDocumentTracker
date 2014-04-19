@@ -192,9 +192,8 @@
     [_uploadController addDocumentPropertyWithKey:@"date" AndValue:(NSData *)_date];
     [_uploadController addDocumentPropertyWithKey:@"provider" AndValue:(NSData *) providerField.text];
     [_uploadController addDocumentPropertyWithKey:@"number" AndValue:(NSData *) numberField.text];
-    [_uploadController uploadDocument];
     
-    
+    [_uploadController uploadDocument:titleField.text];    
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

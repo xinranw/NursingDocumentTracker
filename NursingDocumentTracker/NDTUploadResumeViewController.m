@@ -63,9 +63,7 @@
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
     [_uploadController addDocumentPropertyWithKey:@"date" AndValue:(NSData *)_date];
 
-    [_uploadController uploadDocument];
-    
-    
+    [_uploadController uploadDocument:titleField.text];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

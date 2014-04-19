@@ -60,7 +60,7 @@
     _document.category = category;
 }
 
-- (void)uploadDocument
+- (void) uploadDocument: (NSString *) imageName
 {
     if (!_document){
         // TODO: fill in error here
@@ -101,7 +101,8 @@
             
             // Create a PFObject around a PFFile and associate it with the current user
             PFObject *userPhoto = [PFObject objectWithClassName:@"UserPhoto"];
-            [userPhoto setObject:imageFile forKey:@"imageFile"];
+            userPhoto[@"imageFile"] = imageFile;
+            userPhoto[@"imageName"] = imageName;
             
             // Set the access control list to current user for security purposes
             userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];

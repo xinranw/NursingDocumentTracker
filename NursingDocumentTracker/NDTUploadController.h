@@ -23,7 +23,7 @@
 
 - (void) setDocumentImage: (UIImage *)image;
 - (void) setDocumentCategory: (NDTDocumentCategory *) category;
-- (void) uploadDocument;
+- (void) uploadDocument: (NSString *) imageName;
 - (void) addDocumentPropertyWithKey: (NSString *)key AndValue: (NSData *) value;
 - (NSDate *) dateOneYearFromNow;
 

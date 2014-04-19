@@ -30,9 +30,8 @@
         titleField.text = @"OtherDoc1";
     }
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
-    [_uploadController uploadDocument];
-    
-    
+
+    [_uploadController uploadDocument:titleField.text];    
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
