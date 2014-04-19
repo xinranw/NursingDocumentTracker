@@ -20,18 +20,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    titleField.delegate = self;
+    
+    _uploadController = (NDTUploadController *) self.navigationController;
+	titleField.delegate = self;
 }
 
 - (IBAction) uploadImage
 {
+    NSLog(@"Upload button pressed")
     if ([titleField.text isEqualToString: @""]) {
         titleField.text = @"OtherDoc1";
     }
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
 
-    [_uploadController uploadDocument:titleField.text];    
+    NSLog(@"calling upload document function")
+    [_uploadController uploadDocument:titleField.text];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

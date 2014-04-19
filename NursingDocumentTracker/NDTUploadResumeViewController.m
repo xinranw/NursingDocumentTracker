@@ -22,11 +22,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     _uploadController = (NDTUploadController *) self.navigationController;
-	// Do any additional setup after loading the view.
-    UIDatePicker *myDatePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 200, 320, 200)];
+	UIDatePicker *myDatePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 200, 320, 200)];
+    
     //whenever value changes, go to this method
     [myDatePicker addTarget:self
                      action:@selector(pickerChanged:)

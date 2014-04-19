@@ -20,8 +20,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    titleField.delegate = self;
+    
+    _uploadController = (NDTUploadController *) self.navigationController;
+	titleField.delegate = self;
 }
 
 - (IBAction) uploadImage

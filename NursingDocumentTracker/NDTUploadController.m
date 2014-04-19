@@ -62,6 +62,7 @@
 
 - (void) uploadDocument: (NSString *) imageName
 {
+    NSLog(@"uploading document!")
     if (!_document){
         // TODO: fill in error here
     }
@@ -72,6 +73,8 @@
     NSData *imageData = UIImageJPEGRepresentation(_document.image, 0.05f);
     PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
     
+    NSLog(@"image files created in memory")
+    
     HUD = [[MBProgressHUD alloc] initWithView:self.view];
     [self.view addSubview:HUD];
     
@@ -80,6 +83,8 @@
     HUD.delegate = self;
     HUD.labelText = @"Uploading";
     [HUD show:YES];
+    
+    NSLog(@"hud shown, now uploading dat PFFile")
     
     // Save PFFile
     [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

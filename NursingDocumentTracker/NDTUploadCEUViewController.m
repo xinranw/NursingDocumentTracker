@@ -85,10 +85,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self setupKeyboard:self];
     
-    UIDatePicker *myDatePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 200, 320, 200)];
+    _uploadController = (NDTUploadController *) self.navigationController;
+	UIDatePicker *myDatePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 200, 320, 200)];
+    
     //whenever value changes, go to this method
     [myDatePicker addTarget:self
                      action:@selector(pickerChanged:)
