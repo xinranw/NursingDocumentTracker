@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qPM-KT-9J0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qPM-KT-9J0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -54,10 +54,32 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="8OX-9N-nZY"/>
+                    <connections>
+                        <segue destination="34p-Dh-S4H" kind="push" identifier="detailedImage" id="UWn-rV-JhO"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsa-ax-SwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="573"/>
+            <point key="canvasLocation" x="1884" y="567"/>
+        </scene>
+        <!--Document Image View Controller-->
+        <scene sceneID="yfA-73-YQk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0PJ-Ws-zme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="34p-Dh-S4H" customClass="NDTDocumentImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h5w-K9-qds"/>
+                        <viewControllerLayoutGuide type="bottom" id="FPK-jg-7fJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCU-TU-4VO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Doc-wX-5kQ"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2310" y="573"/>
         </scene>
         <!--Home View Controller - Home-->
         <scene sceneID="fss-Hz-LXO">
@@ -95,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1884" y="-121"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Document List View Controller-->
         <scene sceneID="bap-Zg-opM">
             <objects>
-                <tableViewController id="b2T-rK-Pd8" sceneMemberID="viewController">
+                <tableViewController id="b2T-rK-Pd8" customClass="NDTDocumentListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Jsp-xG-ZDs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

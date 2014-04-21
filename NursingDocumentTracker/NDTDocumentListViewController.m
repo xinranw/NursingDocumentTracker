@@ -7,6 +7,7 @@
 //
 
 #import "NDTDocumentListViewController.h"
+#import "NDTDocumentImageViewController.h"
 
 @implementation NDTDocumentListViewController
 
@@ -22,6 +23,22 @@
     }
     return self;
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [super tableView:tableView didSelectRowAtIndexPath:indexPath];
+    
+    
+        NDTDocumentImageViewController *documentImage =
+        [[NDTDocumentImageViewController alloc] init];
+    
+        PFObject *object = [self.objects objectAtIndex:indexPath.row];
+        documentImage.pfobject = object;
+    
+    
+        [self.navigationController pushViewController:documentImage animated:YES];
+}
+
 
 
 @end

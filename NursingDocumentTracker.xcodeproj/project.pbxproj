@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B204E5D1904BD3000B477A4 /* NDTDocumentImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B204E5C1904BD3000B477A4 /* NDTDocumentImageViewController.m */; };
 		1B3040E018F3067700DAAC4D /* NursingDocumentTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */; };
 		1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */; };
 		1B8A5EB118F3AD4100D9D21C /* NDTUploadCertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB018F3AD4100D9D21C /* NDTUploadCertificationViewController.m */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B204E5B1904BD3000B477A4 /* NDTDocumentImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocumentImageViewController.h; sourceTree = "<group>"; };
+		1B204E5C1904BD3000B477A4 /* NDTDocumentImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocumentImageViewController.m; sourceTree = "<group>"; };
 		1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCategoryViewController.h; sourceTree = "<group>"; };
 		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
 		1B8A5EAC18F3AB0000D9D21C /* NDTUploadLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadLicenseViewController.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */,
 				AAB2077118F3D3EE00EAB035 /* NDTDocumentListViewController.h */,
 				AAB2077218F3D3EE00EAB035 /* NDTDocumentListViewController.m */,
+				1B204E5B1904BD3000B477A4 /* NDTDocumentImageViewController.h */,
+				1B204E5C1904BD3000B477A4 /* NDTDocumentImageViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
 				1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */,
 				AA522D9B18EA939B008C249B /* NDTTakeImageViewController.m in Sources */,
+				1B204E5D1904BD3000B477A4 /* NDTDocumentImageViewController.m in Sources */,
 				AAB2077318F3D3EE00EAB035 /* NDTDocumentListViewController.m in Sources */,
 				1B8A5EB418F3AE7000D9D21C /* NDTUploadCEUViewController.m in Sources */,
 				1B8A5EB118F3AD4100D9D21C /* NDTUploadCertificationViewController.m in Sources */,
