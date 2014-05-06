@@ -27,11 +27,12 @@
     [super tearDown];
 }
 
-//- (void)testInitWithImage
-//{
-//    UIImage * testImage = [[UIImage alloc] init];
-//    id result = initWithImage: testImage;
-//    XCTAssertNotNil(result, @"Yeah I guess images shouldn't be null");
-//}
+- (void)testInitWithImage
+{
+    UIImage *testImage = [[UIImage alloc] init];
+    NDTDocument *testDocument = [[NDTDocument alloc] init];
+    id result = [testDocument initWithImage: testImage];
+    XCTAssertNotNil(result, @"Yeah I guess images shouldn't be null");
+}
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <Parse/Parse.h>
 #import "NDTMainViewController.h"
 #import "NDTLogInViewController.h"
 
@@ -29,30 +28,24 @@
     [super tearDown];
 }
 
-//- (void)testLoginRequestSubmitEmptyString
-//{
-//    PFLogInViewController *testController = [[PFLogInViewController alloc] init];
-//    NSString *username = @"";
-//    NSString *password = @"password";
-//    BOOL isComplete =logInViewController:testController shouldBeginLogInWithUsername:username password:password;
-//    XCTAssertFalse(isComplete, @"Should not allow login of account with empty username");
-//}
-//
-//- (void)testLoginRequestSubmitNullString
-//{
-//    PFLogInViewController *testController = [[PFLogInViewController alloc] init];
-//    NSNull *username;
-//    NSNull *password;
-//    BOOL isComplete =logInViewController:testController shouldBeginLogInWithUsername:username password:password;
-//    XCTAssertFalse(isComplete, @"Should not allow login of account with null strings");
-//}
-//
-//- (void)testSignUpRequestEmptyFields
-//{
-//    PFSignUpViewController *testController = [[PFSignUpViewController alloc]init];
-//    NSDictionary *info = [[NSDictionary init] alloc];
-//    BOOL isInformationComplete = signUpViewController:testController shouldBeginSignUp:info;
-//    XCTAssertFalse(isInformationComplete, @"Empty fields should return no, as well as display an alert behaviorally");
-//}
+- (void)testLoginRequestSubmitEmptyString
+{
+    NDTMainViewController *testMainViewController = [[NDTMainViewController alloc] init];
+    PFLogInViewController *testController = [[PFLogInViewController alloc] init];
+    NSString *username = @"";
+    NSString *password = @"password";
+    BOOL isComplete = [testMainViewController logInViewController:testController shouldBeginLogInWithUsername:username password:password];
+    XCTAssertFalse(isComplete, @"Should not allow login of account with empty username");
+}
+
+- (void)testLoginRequestSubmitNullString
+{
+    NDTMainViewController *testMainViewController = [[NDTMainViewController alloc] init];
+    PFLogInViewController *testController = [[PFLogInViewController alloc] init];
+    NSNull *username;
+    NSNull *password;
+    BOOL isComplete = [testMainViewController logInViewController:testController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password];
+    XCTAssertFalse(isComplete, @"Should not allow login of account with null strings");
+}
 
 @end

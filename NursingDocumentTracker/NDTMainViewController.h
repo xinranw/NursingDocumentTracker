@@ -12,4 +12,7 @@
 
 - (void)presentLogInViewController;
 
+// FOR UNIT TESTING PURPOSES:
+- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password;
+
 @end

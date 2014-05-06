@@ -20,6 +20,7 @@
 		539C7E87190224E100BCB9A7 /* NDTExtendedNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 539C7E86190224E100BCB9A7 /* NDTExtendedNSLog.m */; };
 		539DF00718F3C95F0030396B /* NDTMainViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 539DF00618F3C95F0030396B /* NDTMainViewControllerTest.m */; };
 		539DF00918F3D0CD0030396B /* NDTDocumentTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 539DF00818F3D0CD0030396B /* NDTDocumentTest.m */; };
+		53DAD78E1918F6AB00B2A8B9 /* NDTUploadControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DAD78D1918F6AB00B2A8B9 /* NDTUploadControllerTest.m */; };
 		AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D9018EA8C20008C249B /* NDTMainViewController.m */; };
 		AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */; };
 		AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */; };
@@ -93,6 +94,7 @@
 		539C7E86190224E100BCB9A7 /* NDTExtendedNSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTExtendedNSLog.m; sourceTree = "<group>"; };
 		539DF00618F3C95F0030396B /* NDTMainViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTMainViewControllerTest.m; sourceTree = "<group>"; };
 		539DF00818F3D0CD0030396B /* NDTDocumentTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocumentTest.m; sourceTree = "<group>"; };
+		53DAD78D1918F6AB00B2A8B9 /* NDTUploadControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadControllerTest.m; sourceTree = "<group>"; };
 		753898DB1E224003B4AD46C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTHomeViewController.h; sourceTree = "<group>"; };
 		AA522D8E18EA8C20008C249B /* NDTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTHomeViewController.m; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 			children = (
 				539DF00818F3D0CD0030396B /* NDTDocumentTest.m */,
 				539DF00618F3C95F0030396B /* NDTMainViewControllerTest.m */,
+				53DAD78D1918F6AB00B2A8B9 /* NDTUploadControllerTest.m */,
 				CE9D203118DCC2CB007FD7E3 /* Supporting Files */,
 			);
 			path = NursingDocumentTrackerTests;
@@ -510,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53DAD78E1918F6AB00B2A8B9 /* NDTUploadControllerTest.m in Sources */,
 				539DF00718F3C95F0030396B /* NDTMainViewControllerTest.m in Sources */,
 				539DF00918F3D0CD0030396B /* NDTDocumentTest.m in Sources */,
 			);
@@ -661,18 +665,29 @@
 		};
 		CE9D203E18DCC2CB007FD7E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753898DB1E224003B4AD46C8 /* Pods.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NursingDocumentTracker.app/NursingDocumentTracker";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Doc-U-Nurse.app/Doc-U-Nurse";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/**",
+					"${PODS_ROOT}/Headers",
+					"${PODS_ROOT}/Headers/MBProgressHUD",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
+					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
 				);
 				INFOPLIST_FILE = "NursingDocumentTrackerTests/NursingDocumentTrackerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -683,15 +698,26 @@
 		};
 		CE9D203F18DCC2CB007FD7E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 753898DB1E224003B4AD46C8 /* Pods.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NursingDocumentTracker.app/NursingDocumentTracker";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Doc-U-Nurse.app/Doc-U-Nurse";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/**",
+					"${PODS_ROOT}/Headers",
+					"${PODS_ROOT}/Headers/MBProgressHUD",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK\"",
+					"\"${PODS_ROOT}/Headers/Facebook-iOS-SDK/FacebookSDK\"",
+					"\"${PODS_ROOT}/Headers/MBProgressHUD\"",
+				);
 				INFOPLIST_FILE = "NursingDocumentTrackerTests/NursingDocumentTrackerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

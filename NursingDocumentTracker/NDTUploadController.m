@@ -134,7 +134,8 @@
     }];
 }
 
-+ (NSString *) documentCategoryToString:(NDTDocumentCategory) category {
++ (NSString *) documentCategoryToString:(NDTDocumentCategory) category
+{
     NSString *result = @"";
     
     switch (category) {
