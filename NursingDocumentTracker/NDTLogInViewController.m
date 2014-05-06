@@ -43,8 +43,34 @@
 {
     [super viewDidLayoutSubviews];
     
-    // Fix frames of customized elements
-    [self.logInView.logo setFrame:CGRectMake(35.0f, 90.0f, 250.0f, 115.0f)];
+    // Size differently for iPhone < 5 screen
+    if([UIScreen mainScreen].bounds.size.height == 568){
+        [self.logInView.logo setFrame:CGRectMake(35.0f, 90.0f, 250.0f, 115.0f)];
+    } else{
+         NSLog(@"3.5 inch screen detected.");
+        
+        [self.logInView.logo setFrame:CGRectMake(35.0f, 40.0f, 250.0f, 115.0f)];
+        
+        CGPoint usernameFieldOrigin = self.logInView.usernameField.frame.origin;
+        CGSize usernameFieldSize = self.logInView.usernameField.frame.size;
+        [self.logInView.usernameField setFrame:CGRectMake(usernameFieldOrigin.x, usernameFieldOrigin.y + 50.0f, usernameFieldSize.width, usernameFieldSize.height)];
+        
+        CGPoint passwordFieldOrigin = self.logInView.passwordField.frame.origin;
+        CGSize passwordFieldSize = self.logInView.passwordField.frame.size;
+        [self.logInView.passwordField setFrame:CGRectMake(passwordFieldOrigin.x, passwordFieldOrigin.y + 50.0f, passwordFieldSize.width, passwordFieldSize.height)];
+        
+        CGPoint signUpLabelOrigin = self.logInView.signUpLabel.frame.origin;
+        CGSize signUpLabelSize = self.logInView.signUpLabel.frame.size;
+        [self.logInView.signUpLabel setFrame:CGRectMake(signUpLabelOrigin.x, signUpLabelOrigin.y + 50.0f, signUpLabelSize.width, signUpLabelSize.height)];
+        
+        CGPoint logInButtonOrigin = self.logInView.logInButton.frame.origin;
+        CGSize logInButtonSize = self.logInView.logInButton.frame.size;
+        [self.logInView.logInButton setFrame:CGRectMake(logInButtonOrigin.x, logInButtonOrigin.y + 50.0f, logInButtonSize.width, logInButtonSize.height)];
+        
+        CGPoint signUpButtonOrigin = self.logInView.signUpButton.frame.origin;
+        CGSize signUpButtonSize = self.logInView.signUpButton.frame.size;
+        [self.logInView.signUpButton setFrame:CGRectMake(signUpButtonOrigin.x, signUpButtonOrigin.y + 50.0f, signUpButtonSize.width, signUpButtonSize.height)];
+    }
 }
 
 @end

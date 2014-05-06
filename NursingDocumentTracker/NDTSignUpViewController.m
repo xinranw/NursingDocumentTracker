@@ -42,7 +42,28 @@
     [super viewDidLayoutSubviews];
     
     // Fix frames of customized elements
-    self.signUpView.logo.frame = CGRectMake(35.0f, 135.0f, 250.0f, 115.0f);
+    
+    
+    // Size differently for iPhone < 5 screen
+    if([UIScreen mainScreen].bounds.size.height == 568){
+        self.signUpView.logo.frame = CGRectMake(35.0f, 135.0f, 250.0f, 115.0f);
+    } else{
+        NSLog(@"3.5 inch screen detected.");
+        
+        self.signUpView.logo.frame = CGRectMake(35.0f, 85.0f, 250.0f, 115.0f);
+        
+        CGPoint usernameFieldOrigin = self.signUpView.usernameField.frame.origin;
+        CGSize usernameFieldSize = self.signUpView.usernameField.frame.size;
+        [self.signUpView.usernameField setFrame:CGRectMake(usernameFieldOrigin.x, usernameFieldOrigin.y + 15.0f, usernameFieldSize.width, usernameFieldSize.height)];
+        
+        CGPoint passwordFieldOrigin = self.signUpView.passwordField.frame.origin;
+        CGSize passwordFieldSize = self.signUpView.passwordField.frame.size;
+        [self.signUpView.passwordField setFrame:CGRectMake(passwordFieldOrigin.x, passwordFieldOrigin.y + 15.0f, passwordFieldSize.width, passwordFieldSize.height)];
+        
+        CGPoint signUpButtonOrigin = self.signUpView.signUpButton.frame.origin;
+        CGSize signUpButtonSize = self.signUpView.signUpButton.frame.size;
+        [self.signUpView.signUpButton setFrame:CGRectMake(signUpButtonOrigin.x, signUpButtonOrigin.y + 25.0f, signUpButtonSize.width, signUpButtonSize.height)];
+    }
 }
 
 
