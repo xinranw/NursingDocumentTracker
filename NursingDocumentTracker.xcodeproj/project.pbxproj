@@ -10,6 +10,7 @@
 		1B204E5D1904BD3000B477A4 /* NDTDocumentImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B204E5C1904BD3000B477A4 /* NDTDocumentImageViewController.m */; };
 		1B75C7411918B7E60073E62C /* NDTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7401918B7E60073E62C /* NDTSettingsViewController.m */; };
 		1B75C7441918C4360073E62C /* NDTExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7431918C4360073E62C /* NDTExportViewController.m */; };
+		1B75C7491918DCA60073E62C /* NDTCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7481918DCA60073E62C /* NDTCalendarViewController.m */; };
 		1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */; };
 		1B8A5EB118F3AD4100D9D21C /* NDTUploadCertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB018F3AD4100D9D21C /* NDTUploadCertificationViewController.m */; };
 		1B8A5EB418F3AE7000D9D21C /* NDTUploadCEUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EB318F3AE7000D9D21C /* NDTUploadCEUViewController.m */; };
@@ -75,6 +76,8 @@
 		1B75C7401918B7E60073E62C /* NDTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTSettingsViewController.m; sourceTree = "<group>"; };
 		1B75C7421918C4360073E62C /* NDTExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTExportViewController.h; sourceTree = "<group>"; };
 		1B75C7431918C4360073E62C /* NDTExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTExportViewController.m; sourceTree = "<group>"; };
+		1B75C7471918DCA60073E62C /* NDTCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCalendarViewController.h; sourceTree = "<group>"; };
+		1B75C7481918DCA60073E62C /* NDTCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCalendarViewController.m; sourceTree = "<group>"; };
 		1B8A5EAC18F3AB0000D9D21C /* NDTUploadLicenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadLicenseViewController.h; sourceTree = "<group>"; };
 		1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadLicenseViewController.m; sourceTree = "<group>"; };
 		1B8A5EAF18F3AD4100D9D21C /* NDTUploadCertificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadCertificationViewController.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 				1B75C7401918B7E60073E62C /* NDTSettingsViewController.m */,
 				1B75C7421918C4360073E62C /* NDTExportViewController.h */,
 				1B75C7431918C4360073E62C /* NDTExportViewController.m */,
+				1B75C7471918DCA60073E62C /* NDTCalendarViewController.h */,
+				1B75C7481918DCA60073E62C /* NDTCalendarViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 				CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */,
 				1B75C7411918B7E60073E62C /* NDTSettingsViewController.m in Sources */,
 				1B8A5EB718F3BB8D00D9D21C /* NDTUploadResumeViewController.m in Sources */,
+				1B75C7491918DCA60073E62C /* NDTCalendarViewController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
