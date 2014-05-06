@@ -21,16 +21,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    PFImageView* detImage = [[PFImageView alloc] initWithFrame:CGRectMake(0,50,350,480)];
+    PFImageView* detImage = [[PFImageView alloc] initWithFrame:CGRectMake(0,0,self.view.frame.size.width,self.view.frame.size.height)];
     
     PFFile* file = [_pfobject objectForKey:@"imageFile"];
-    
     detImage.file = file;
-    
     [detImage loadInBackground];
     
-    [self.view addSubview:detImage];
     
+    UIScrollView* myScrollView = [[UIScrollView alloc] init];
+    
+    [myScrollView setScrollEnabled:YES];
+    [myScrollView setUserInteractionEnabled:YES];
+    [myScrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height)];
+    [myScrollView addSubview:detImage];
+    self.view = myScrollView;
+
 
 }
 
