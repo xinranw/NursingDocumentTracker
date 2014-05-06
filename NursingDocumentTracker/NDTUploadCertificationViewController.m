@@ -33,7 +33,7 @@
     
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
 
-    [_uploadController uploadDocument:titleField.text];
+    [_uploadController uploadDocument:titleField.text withCategory:CategoryCertifications];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
