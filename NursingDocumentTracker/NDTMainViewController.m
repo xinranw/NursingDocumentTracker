@@ -8,6 +8,7 @@
 
 #import "NDTMainViewController.h"
 #import "NDTLogInViewController.h"
+#import "NDTSignUpViewController.h"
 
 @interface NDTMainViewController ()
 
@@ -50,7 +51,7 @@
                                  PFLogInFieldsLogInButton |
                                  PFLogInFieldsSignUpButton;
 
-    PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+    PFSignUpViewController *signUpViewController = [[NDTSignUpViewController alloc] init];
     [signUpViewController setDelegate:self];
     signUpViewController.fields = PFSignUpFieldsUsernameAndPassword |
                                   PFSignUpFieldsSignUpButton |

@@ -34,6 +34,7 @@
 		AA851A4818EA6A75008DA57F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4718EA6A75008DA57F /* Security.framework */; };
 		AA851A4A18EA6A7A008DA57F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4918EA6A7A008DA57F /* StoreKit.framework */; };
 		AA851A4C18EA6A80008DA57F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */; };
+		AA958B5F19188A60000A0656 /* NDTSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA958B5E19188A60000A0656 /* NDTSignUpViewController.m */; };
 		AAB2077318F3D3EE00EAB035 /* NDTDocumentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB2077218F3D3EE00EAB035 /* NDTDocumentListViewController.m */; };
 		CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */; };
 		CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */; };
@@ -103,6 +104,8 @@
 		AA851A4718EA6A75008DA57F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		AA851A4918EA6A7A008DA57F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AA851A4B18EA6A80008DA57F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA958B5D19188A60000A0656 /* NDTSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTSignUpViewController.h; sourceTree = "<group>"; };
+		AA958B5E19188A60000A0656 /* NDTSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTSignUpViewController.m; sourceTree = "<group>"; };
 		AAB2077118F3D3EE00EAB035 /* NDTDocumentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTDocumentListViewController.h; sourceTree = "<group>"; };
 		AAB2077218F3D3EE00EAB035 /* NDTDocumentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocumentListViewController.m; sourceTree = "<group>"; };
 		AAD7797718E130E200236485 /* NDTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTAppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +174,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA958B5C19188A39000A0656 /* Login & Signup */ = {
+			isa = PBXGroup;
+			children = (
+				AA958B5D19188A60000A0656 /* NDTSignUpViewController.h */,
+				AA958B5E19188A60000A0656 /* NDTSignUpViewController.m */,
+				AA7D13E418F2449700A1731D /* NDTLogInViewController.h */,
+				AA7D13E518F2449700A1731D /* NDTLogInViewController.m */,
+			);
+			name = "Login & Signup";
+			sourceTree = "<group>";
+		};
 		AAD7798F18E1311700236485 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,9 +197,8 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AA958B5C19188A39000A0656 /* Login & Signup */,
 				CE2FEE9018EF7FD40090CBC8 /* Upload */,
-				AA7D13E418F2449700A1731D /* NDTLogInViewController.h */,
-				AA7D13E518F2449700A1731D /* NDTLogInViewController.m */,
 				AA522D8F18EA8C20008C249B /* NDTMainViewController.h */,
 				AA522D9018EA8C20008C249B /* NDTMainViewController.m */,
 				AA522D8D18EA8C20008C249B /* NDTHomeViewController.h */,
@@ -454,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				539C7E87190224E100BCB9A7 /* NDTExtendedNSLog.m in Sources */,
+				AA958B5F19188A60000A0656 /* NDTSignUpViewController.m in Sources */,
 				1B8A5EBA18F3BDC700D9D21C /* NDTUploadOtherViewController.m in Sources */,
 				1B3040E018F3067700DAAC4D /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,

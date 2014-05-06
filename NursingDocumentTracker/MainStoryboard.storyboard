@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qPM-KT-9J0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qPM-KT-9J0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -65,7 +65,6 @@
         <!--Document Image View Controller-->
         <scene sceneID="yfA-73-YQk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0PJ-Ws-zme" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="34p-Dh-S4H" customClass="NDTDocumentImageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h5w-K9-qds"/>
@@ -78,6 +77,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Doc-wX-5kQ"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0PJ-Ws-zme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2310" y="573"/>
         </scene>
