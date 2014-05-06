@@ -174,13 +174,8 @@
 
 - (IBAction) uploadImage
 {
-    if ([titleField.text isEqualToString: @""]) {
-        titleField.text = @"CEUDoc1";
-    }
-    if ([dateField.text isEqualToString: @""]) {
-        _date = [NSDate date];
-    }
-    if ([providerField.text isEqualToString: @""] || [numberField.text isEqualToString: @""]) {
+    if ([titleField.text isEqualToString: @""] || [dateField.text isEqualToString: @""] || [providerField.text isEqualToString: @""] || [numberField.text isEqualToString: @""])\
+    {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Missing Information", nil)
                                     message:NSLocalizedString(@"Make sure you fill out all of the information!", nil)
                                    delegate:nil

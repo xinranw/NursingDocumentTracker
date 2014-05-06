@@ -79,11 +79,11 @@
     NSArray *buttons = [[NSArray alloc] initWithObjects: immunizationsButton, licensesButton, certificationsButton, ceusButton, resumesButton, othersButton, nil];
     
     UIButton *button;
-    for (int i = 0; i < buttons.count; i++){
+    for (int i = 0; i < buttons.count; i++) {
         button = (UIButton *)[buttons objectAtIndex:i];
         [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [button setTitleColor:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
-        [button.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14]];
+        [button.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:16]];
         [self.view addSubview:button];
     }
 }
