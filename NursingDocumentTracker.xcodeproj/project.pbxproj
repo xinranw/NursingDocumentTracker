@@ -8,17 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B204E5D1904BD3000B477A4 /* NDTDocumentImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B204E5C1904BD3000B477A4 /* NDTDocumentImageViewController.m */; };
-		1B3040E018F3067700DAAC4D /* NursingDocumentTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9D201F18DCC2CB007FD7E3 /* NursingDocumentTracker.xcdatamodeld */; };
-		1B75C7231918B2F90073E62C /* CKCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7221918B2F90073E62C /* CKCalendarView.m */; };
-		1B75C7281918B3130073E62C /* CKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7251918B3130073E62C /* CKAppDelegate.m */; };
-		1B75C7291918B3130073E62C /* CKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7271918B3130073E62C /* CKViewController.m */; };
-		1B75C72F1918B35E0073E62C /* Calendar-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B75C72C1918B35E0073E62C /* Calendar-Info.plist */; };
-		1B75C7331918B3790073E62C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B75C7311918B3790073E62C /* InfoPlist.strings */; };
-		1B75C7391918B3980073E62C /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B75C7351918B3980073E62C /* left_arrow.png */; };
-		1B75C73A1918B3980073E62C /* left_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B75C7361918B3980073E62C /* left_arrow@2x.png */; };
-		1B75C73B1918B3980073E62C /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B75C7371918B3980073E62C /* right_arrow.png */; };
-		1B75C73C1918B3980073E62C /* right_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B75C7381918B3980073E62C /* right_arrow@2x.png */; };
-		1B75C73E1918B4B20073E62C /* CKmain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C73D1918B4B20073E62C /* CKmain.m */; };
 		1B75C7411918B7E60073E62C /* NDTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7401918B7E60073E62C /* NDTSettingsViewController.m */; };
 		1B75C7441918C4360073E62C /* NDTExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B75C7431918C4360073E62C /* NDTExportViewController.m */; };
 		1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8A5EAD18F3AB0000D9D21C /* NDTUploadLicenseViewController.m */; };
@@ -82,20 +71,6 @@
 		1B204E5C1904BD3000B477A4 /* NDTDocumentImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTDocumentImageViewController.m; sourceTree = "<group>"; };
 		1B2768B918EA7EF2000C1DD4 /* NDTCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTCategoryViewController.h; sourceTree = "<group>"; };
 		1B2768BA18EA7EF2000C1DD4 /* NDTCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTCategoryViewController.m; sourceTree = "<group>"; };
-		1B75C7211918B2F90073E62C /* CKCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKCalendarView.h; path = "../../../../../../Downloads/CKCalendar-master/Source/CKCalendarView.h"; sourceTree = "<group>"; };
-		1B75C7221918B2F90073E62C /* CKCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKCalendarView.m; path = "../../../../../../Downloads/CKCalendar-master/Source/CKCalendarView.m"; sourceTree = "<group>"; };
-		1B75C7241918B3130073E62C /* CKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKAppDelegate.h; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/CKAppDelegate.h"; sourceTree = "<group>"; };
-		1B75C7251918B3130073E62C /* CKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKAppDelegate.m; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/CKAppDelegate.m"; sourceTree = "<group>"; };
-		1B75C7261918B3130073E62C /* CKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKViewController.h; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/CKViewController.h"; sourceTree = "<group>"; };
-		1B75C7271918B3130073E62C /* CKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKViewController.m; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/CKViewController.m"; sourceTree = "<group>"; };
-		1B75C72C1918B35E0073E62C /* Calendar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Calendar-Info.plist"; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/Calendar-Info.plist"; sourceTree = "<group>"; };
-		1B75C72D1918B35E0073E62C /* Calendar-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Calendar-Prefix.pch"; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/Calendar-Prefix.pch"; sourceTree = "<group>"; };
-		1B75C7321918B3790073E62C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		1B75C7351918B3980073E62C /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_arrow.png; path = "../../../../../../Downloads/CKCalendar-master/Source/resources/left_arrow.png"; sourceTree = "<group>"; };
-		1B75C7361918B3980073E62C /* left_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left_arrow@2x.png"; path = "../../../../../../Downloads/CKCalendar-master/Source/resources/left_arrow@2x.png"; sourceTree = "<group>"; };
-		1B75C7371918B3980073E62C /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right_arrow.png; path = "../../../../../../Downloads/CKCalendar-master/Source/resources/right_arrow.png"; sourceTree = "<group>"; };
-		1B75C7381918B3980073E62C /* right_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right_arrow@2x.png"; path = "../../../../../../Downloads/CKCalendar-master/Source/resources/right_arrow@2x.png"; sourceTree = "<group>"; };
-		1B75C73D1918B4B20073E62C /* CKmain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKmain.m; path = "../../../../../../Downloads/CKCalendar-master/Examples/Calendar/CKmain.m"; sourceTree = "<group>"; };
 		1B75C73F1918B7E60073E62C /* NDTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTSettingsViewController.h; sourceTree = "<group>"; };
 		1B75C7401918B7E60073E62C /* NDTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTSettingsViewController.m; sourceTree = "<group>"; };
 		1B75C7421918C4360073E62C /* NDTExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTExportViewController.h; sourceTree = "<group>"; };
@@ -204,43 +179,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B75C7201918B2E00073E62C /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				1B75C7241918B3130073E62C /* CKAppDelegate.h */,
-				1B75C7251918B3130073E62C /* CKAppDelegate.m */,
-				1B75C7261918B3130073E62C /* CKViewController.h */,
-				1B75C7271918B3130073E62C /* CKViewController.m */,
-				1B75C7211918B2F90073E62C /* CKCalendarView.h */,
-				1B75C7221918B2F90073E62C /* CKCalendarView.m */,
-				1B75C7341918B3840073E62C /* resources */,
-				1B75C72B1918B3320073E62C /* Supporting Files */,
-			);
-			name = Calendar;
-			sourceTree = "<group>";
-		};
-		1B75C72B1918B3320073E62C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1B75C73D1918B4B20073E62C /* CKmain.m */,
-				1B75C7311918B3790073E62C /* InfoPlist.strings */,
-				1B75C72C1918B35E0073E62C /* Calendar-Info.plist */,
-				1B75C72D1918B35E0073E62C /* Calendar-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1B75C7341918B3840073E62C /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				1B75C7351918B3980073E62C /* left_arrow.png */,
-				1B75C7361918B3980073E62C /* left_arrow@2x.png */,
-				1B75C7371918B3980073E62C /* right_arrow.png */,
-				1B75C7381918B3980073E62C /* right_arrow@2x.png */,
-			);
-			name = resources;
-			sourceTree = "<group>";
-		};
 		AA958B5C19188A39000A0656 /* Login & Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +202,6 @@
 		AAD7799218E1312600236485 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1B75C7201918B2E00073E62C /* Calendar */,
 				AA958B5C19188A39000A0656 /* Login & Signup */,
 				CE2FEE9018EF7FD40090CBC8 /* Upload */,
 				AA522D8F18EA8C20008C249B /* NDTMainViewController.h */,
@@ -484,15 +421,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B75C73A1918B3980073E62C /* left_arrow@2x.png in Resources */,
-				1B75C7391918B3980073E62C /* left_arrow.png in Resources */,
-				1B75C73B1918B3980073E62C /* right_arrow.png in Resources */,
-				1B75C72F1918B35E0073E62C /* Calendar-Info.plist in Resources */,
 				CE205C6E18DCC5CB008461A8 /* MainStoryboard.storyboard in Resources */,
-				1B75C73C1918B3980073E62C /* right_arrow@2x.png in Resources */,
 				CE9D201818DCC2CB007FD7E3 /* InfoPlist.strings in Resources */,
 				CE9D202318DCC2CB007FD7E3 /* Images.xcassets in Resources */,
-				1B75C7331918B3790073E62C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,23 +477,18 @@
 			files = (
 				539C7E87190224E100BCB9A7 /* NDTExtendedNSLog.m in Sources */,
 				AA958B5F19188A60000A0656 /* NDTSignUpViewController.m in Sources */,
-				1B75C7291918B3130073E62C /* CKViewController.m in Sources */,
 				1B8A5EBA18F3BDC700D9D21C /* NDTUploadOtherViewController.m in Sources */,
-				1B3040E018F3067700DAAC4D /* NursingDocumentTracker.xcdatamodeld in Sources */,
 				AA522D9818EA8CD0008C249B /* NDTAppDelegate.m in Sources */,
 				AA522D9318EA8C9E008C249B /* NDTMainViewController.m in Sources */,
 				CEFCDFD718EFB0CB00E014D4 /* NDTPropertiesViewController.m in Sources */,
 				CE2FEE9318EF80690090CBC8 /* NDTUploadController.m in Sources */,
-				1B75C7231918B2F90073E62C /* CKCalendarView.m in Sources */,
 				1B75C7411918B7E60073E62C /* NDTSettingsViewController.m in Sources */,
 				1B8A5EB718F3BB8D00D9D21C /* NDTUploadResumeViewController.m in Sources */,
 				AA522D9418EA8C9E008C249B /* NDTHomeViewController.m in Sources */,
 				AA7D13E618F2449700A1731D /* NDTLogInViewController.m in Sources */,
 				AA522D9518EA8C9E008C249B /* NDTCategoryViewController.m in Sources */,
 				CEFCDFD418EF92C100E014D4 /* NDTDocument.m in Sources */,
-				1B75C73E1918B4B20073E62C /* CKmain.m in Sources */,
 				CEFCDFDB18EFBDB800E014D4 /* NDTUploadImmunizationViewController.m in Sources */,
-				1B75C7281918B3130073E62C /* CKAppDelegate.m in Sources */,
 				CE9D201A18DCC2CB007FD7E3 /* main.m in Sources */,
 				1B8A5EAE18F3AB0000D9D21C /* NDTUploadLicenseViewController.m in Sources */,
 				1B75C7441918C4360073E62C /* NDTExportViewController.m in Sources */,
@@ -594,14 +520,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1B75C7311918B3790073E62C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B75C7321918B3790073E62C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		CE9D201618DCC2CB007FD7E3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
