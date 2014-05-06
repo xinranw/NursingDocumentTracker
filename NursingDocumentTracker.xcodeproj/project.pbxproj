@@ -118,7 +118,7 @@
 		CE205C6D18DCC5CB008461A8 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CE2FEE9118EF80690090CBC8 /* NDTUploadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDTUploadController.h; sourceTree = "<group>"; };
 		CE2FEE9218EF80690090CBC8 /* NDTUploadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDTUploadController.m; sourceTree = "<group>"; };
-		CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dr. Doc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D200818DCC2CB007FD7E3 /* Doc-U-Nurse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doc-U-Nurse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D200B18DCC2CB007FD7E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9D200D18DCC2CB007FD7E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CE9D200F18DCC2CB007FD7E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -263,7 +263,7 @@
 		CE9D200918DCC2CB007FD7E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */,
+				CE9D200818DCC2CB007FD7E3 /* Doc-U-Nurse.app */,
 				CE9D202818DCC2CB007FD7E3 /* NursingDocumentTrackerTests.xctest */,
 			);
 			name = Products;
@@ -359,7 +359,7 @@
 			);
 			name = NursingDocumentTracker;
 			productName = NursingDocumentTracker;
-			productReference = CE9D200818DCC2CB007FD7E3 /* Dr. Doc.app */;
+			productReference = CE9D200818DCC2CB007FD7E3 /* Doc-U-Nurse.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CE9D202718DCC2CB007FD7E3 /* NursingDocumentTrackerTests */ = {
@@ -626,7 +626,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
-				PRODUCT_NAME = "Dr. Doc";
+				PRODUCT_NAME = "Doc-U-Nurse";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -647,7 +647,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NursingDocumentTracker/NursingDocumentTracker-Prefix.pch";
 				INFOPLIST_FILE = "NursingDocumentTracker/NursingDocumentTracker-Info.plist";
-				PRODUCT_NAME = "Dr. Doc";
+				PRODUCT_NAME = "Doc-U-Nurse";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
