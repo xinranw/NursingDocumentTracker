@@ -36,6 +36,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIImage* img = [UIImage imageNamed:@"globe.png"];
+    _imageView.image = img;
+   // _imageView = [[UIImageView alloc] initWithImage:img];
 }
 
 

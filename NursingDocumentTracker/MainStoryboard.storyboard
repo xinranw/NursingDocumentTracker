@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qPM-KT-9J0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qPM-KT-9J0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -332,7 +332,7 @@
             </objects>
             <point key="canvasLocation" x="1220" y="1287"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--Calendar View Controller - Calendar-->
         <scene sceneID="asc-2W-cPF">
             <objects>
                 <viewController id="JQd-Qz-5Dl" customClass="NDTCalendarViewController" sceneMemberID="viewController">
@@ -345,7 +345,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jQA-98-hTg"/>
+                    <navigationItem key="navigationItem" title="Calendar" id="jQA-98-hTg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xh8-9k-fl7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -380,7 +380,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaX-lW-zrW">
-                                <rect key="frame" x="33" y="182" width="255" height="50"/>
+                                <rect key="frame" x="38" y="340" width="255" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Export">
@@ -391,10 +391,17 @@
                                     <action selector="exportButton:" destination="JQL-4f-vyC" eventType="touchUpInside" id="9Ez-Vr-mys"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-BY-8wb">
+                                <rect key="frame" x="52" y="93" width="226" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Export" id="dif-Sb-MV7"/>
+                    <connections>
+                        <outlet property="imageView" destination="hMP-BY-8wb" id="1bH-rr-7Fa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsc-O8-tXT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
