@@ -36,6 +36,8 @@
     
     titleField.delegate = self;
     dateField.delegate = self;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
 }
 
 - (void) pickerChanged:(id)sender

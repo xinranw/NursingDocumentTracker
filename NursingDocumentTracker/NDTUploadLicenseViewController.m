@@ -37,6 +37,8 @@
 
     dateField.delegate = self;
     titleField.delegate = self;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
 }
 
 - (void) pickerChanged:(id)sender
@@ -48,7 +50,6 @@
     
     _expirationDate = [sender date];
     NSLog(@"value: %@", [sender date]);
-    
 }
 
 - (IBAction) uploadImage

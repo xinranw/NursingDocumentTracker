@@ -42,6 +42,8 @@
     }
     [self.takeImageButton addTarget:self action:@selector(loadCamera:) forControlEvents:UIControlEventTouchUpInside];
     [self loadCamera:nil];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
 }
 
 - (void) loadCamera:(id)sender

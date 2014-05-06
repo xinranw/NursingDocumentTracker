@@ -113,6 +113,8 @@
     dateField.delegate = self;
     providerField.delegate = self;
     numberField.delegate = self;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
 }
 
 - (void) pickerChanged:(id)sender

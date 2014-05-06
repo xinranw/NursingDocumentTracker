@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
     [self setSelectedIndex:2];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

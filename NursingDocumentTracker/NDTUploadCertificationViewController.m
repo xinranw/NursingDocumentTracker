@@ -23,6 +23,8 @@
     
     _uploadController = (NDTUploadController *) self.navigationController;
 	titleField.delegate = self;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]}];
 }
 
 - (IBAction) uploadImage
