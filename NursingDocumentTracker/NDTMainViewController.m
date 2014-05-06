@@ -29,11 +29,6 @@
 {
     [super viewDidLoad];
     [self setSelectedIndex:2];
-    
-    UITabBar *tabBar = self.tabBar;
-    for (UITabBarItem *item in tabBar.items){
-        item.imageInsets = UIEdgeInsetsMake(8, 6, 2, 6);
-    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
