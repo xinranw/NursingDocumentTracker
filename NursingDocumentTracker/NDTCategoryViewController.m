@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) NDTUploadController *uploadController;
 @property (strong, nonatomic) NSArray *categoryArray;
-@property (nonatomic,strong) NSString *category;
+@property (strong, nonatomic) NSString *category;
 
 @end
 

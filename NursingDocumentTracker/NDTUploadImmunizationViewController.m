@@ -8,6 +8,7 @@
 
 #import "NDTUploadImmunizationViewController.h"
 #import "NDTUploadController.h"
+#import "NDTDocumentCategory.h"
 
 @interface NDTUploadImmunizationViewController ()
 
@@ -64,7 +65,7 @@
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
     [_uploadController addDocumentPropertyWithKey:@"expiration" AndValue:(NSData *)_expirationDate];
 
-    [_uploadController uploadDocument:titleField.text];    
+    [_uploadController uploadDocument:titleField.text withCategory:CategoryImmunizations];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

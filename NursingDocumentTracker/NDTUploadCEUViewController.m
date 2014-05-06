@@ -194,7 +194,7 @@
     [_uploadController addDocumentPropertyWithKey:@"provider" AndValue:(NSData *) providerField.text];
     [_uploadController addDocumentPropertyWithKey:@"number" AndValue:(NSData *) numberField.text];
     
-    [_uploadController uploadDocument:titleField.text];    
+    [_uploadController uploadDocument:titleField.text withCategory:CategoryCEUs];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

@@ -60,18 +60,12 @@
     _document.category = category;
 }
 
-- (void) uploadDocument: (NSString *) imageName
+- (void) uploadDocument: (NSString *) imageName withCategory: (NDTDocumentCategory) categoryName
 {
     NSLog(@"uploading document!")
-    if (!_document){
-        // TODO: fill in error here
-    }
-    if (!_document.image){
-        // TODO: fill in error here
-    }
     
     NSData *imageData = UIImageJPEGRepresentation(_document.image, 0.05f);
-    PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
+    PFFile *imageFile = [PFFile fileWithName:[NSString stringWithFormat:@"%@.jpg", imageName] data:imageData];
     
     NSLog(@"image files created in memory")
     
@@ -105,9 +99,12 @@
             HUD.delegate = self;
             
             // Create a PFObject around a PFFile and associate it with the current user
-            PFObject *userPhoto = [PFObject objectWithClassName:@"UserPhoto"];
+            PFObject *userPhoto = [PFObject objectWithClassName:[NDTUploadController documentCategoryToString:categoryName]];
             userPhoto[@"imageFile"] = imageFile;
             userPhoto[@"imageName"] = imageName;
+            
+            // test if category is nil?
+            NSLog(@"%@", [NDTUploadController documentCategoryToString:categoryName]);
             
             // Set the access control list to current user for security purposes
             userPhoto.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
@@ -137,6 +134,32 @@
     }];
 }
 
++ (NSString *) documentCategoryToString:(NDTDocumentCategory) category {
+    NSString *result = @"";
+    
+    switch (category) {
+        case CategoryImmunizations:
+            result = @"Immunization";
+            break;
+        case CategoryLicenses:
+            result = @"License";
+            break;
+        case CategoryCertifications:
+            result = @"Certification";
+            break;
+        case CategoryCEUs:
+            result = @"CEU";
+            break;
+        case CategoryResumes:
+            result = @"Resume";
+            break;
+        default:
+            result = @"Other";
+            break;
+    }
+    return result;
+}
+
 // why is it so much work to just get the date one year from now?
 - (NSDate *) dateOneYearFromNow
 {
@@ -149,7 +172,7 @@
 
 - (NSString *) description
 {
-    return @"This is a upload controller.";
+    return @"This is an upload controller.";
 }
 
 

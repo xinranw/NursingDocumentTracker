@@ -9,6 +9,7 @@
 #import "NDTMainViewController.h"
 #import "NDTHomeViewController.h"
 #import "NDTDocumentListViewController.h"
+#import "NDTUploadController.h"
 
 @interface NDTHomeViewController ()
 
@@ -38,54 +39,62 @@
     [immunizationsButton addTarget:self
                action:@selector(buttonClicked:)
      forControlEvents:UIControlEventTouchUpInside];
+    [immunizationsButton setTag:CategoryImmunizations];
+    
     UIButton *licensesButton = [[UIButton alloc] initWithFrame:CGRectMake(60, 150, 100, 30)];
     [licensesButton setTitle:@"Licenses" forState:UIControlStateNormal];
     [licensesButton addTarget:self
                             action:@selector(buttonClicked:)
                   forControlEvents:UIControlEventTouchUpInside];
+    [licensesButton setTag:CategoryLicenses];
+    
     UIButton *certificationsButton = [[UIButton alloc] initWithFrame:CGRectMake(60, 200, 100, 30)];
     [certificationsButton setTitle:@"Certifications" forState:UIControlStateNormal];
     [certificationsButton addTarget:self
                             action:@selector(buttonClicked:)
                   forControlEvents:UIControlEventTouchUpInside];
+    [certificationsButton setTag:CategoryCertifications];
+    
     UIButton *ceusButton = [[UIButton alloc] initWithFrame:CGRectMake(60, 250, 100, 30)];
     [ceusButton setTitle:@"CEUs" forState:UIControlStateNormal];
     [ceusButton addTarget:self
                             action:@selector(buttonClicked:)
                   forControlEvents:UIControlEventTouchUpInside];
+    [ceusButton setTag:CategoryCEUs];
+    
     UIButton *resumesButton = [[UIButton alloc] initWithFrame:CGRectMake(60, 300, 100, 30)];
     [resumesButton setTitle:@"CV/Resume" forState:UIControlStateNormal];
     [resumesButton addTarget:self
                             action:@selector(buttonClicked:)
-                  forControlEvents:UIControlEventTouchUpInside];
+                  forControlEvents:UIControlEventTouchUpInside];\
+    [resumesButton setTag:CategoryResumes];
+    
     UIButton *othersButton = [[UIButton alloc] initWithFrame:CGRectMake(60, 350, 100, 30)];
     [othersButton setTitle:@"Others" forState:UIControlStateNormal];
     [othersButton addTarget:self
                             action:@selector(buttonClicked:)
                   forControlEvents:UIControlEventTouchUpInside];
-    NSArray *buttons = [[NSArray alloc] initWithObjects: immunizationsButton, licensesButton, certificationsButton, ceusButton, resumesButton, othersButton, nil];
+    [othersButton setTag:CategoryOthers];
     
+    NSArray *buttons = [[NSArray alloc] initWithObjects: immunizationsButton, licensesButton, certificationsButton, ceusButton, resumesButton, othersButton, nil];
     
     UIButton *button;
     for (int i = 0; i < buttons.count; i++){
         button = (UIButton *)[buttons objectAtIndex:i];
         [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//        [button setBackgroundColor: [UIColor yellowColor]];
         [button.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:14]];
-
-        [button setTag: i];
         [self.view addSubview:button];
     }
 }
 
--(void) buttonClicked:(id)sender
+- (void) buttonClicked:(id)sender
 {
-    NSLog(@"you clicked on button %@", sender);
-//    [self performSegueWithIdentifier:@"CategoryListingSegue" sender:self];
+//    NSLog(@"You clicked on button %@", [sender titleLabel].text);
     
     NDTDocumentListViewController *documentList =
-        [[NDTDocumentListViewController alloc] init];
+    [[NDTDocumentListViewController alloc] initWithClassName:[NDTUploadController documentCategoryToString: [sender tag]]];
+//    NSLog(@"Button category clicked: %d", documentList.category);
     
     [self.navigationController pushViewController:documentList animated:YES];
 }

@@ -34,7 +34,7 @@
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
 
     NSLog(@"calling upload document function")
-    [_uploadController uploadDocument:titleField.text];
+    [_uploadController uploadDocument:titleField.text withCategory:CategoryOthers];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

@@ -11,12 +11,12 @@
 @protocol NDTDocumentCategory <NSObject>
 
 typedef NS_ENUM(NSInteger, NDTDocumentCategory) {
-    CategoryImmunizations = 0,
-    CategoryLicenses = 1,
-    CategoryCertifications = 2,
-    CategoryCEUs = 3,
-    CategoryResumes = 4,
-    CategoryOthers = 5
+    CategoryImmunizations,
+    CategoryLicenses,
+    CategoryCertifications,
+    CategoryCEUs,
+    CategoryResumes,
+    CategoryOthers
 };
 
 @end

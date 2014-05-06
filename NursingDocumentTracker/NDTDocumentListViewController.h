@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/PFQueryTableViewController.h>
+#import "NDTDocumentCategory.h"
 
 @interface NDTDocumentListViewController : PFQueryTableViewController
+
+@property NDTDocumentCategory category;
 
 @end

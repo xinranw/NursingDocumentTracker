@@ -63,7 +63,7 @@
     [_uploadController addDocumentPropertyWithKey:@"title" AndValue:(NSData *)titleField.text];
     [_uploadController addDocumentPropertyWithKey:@"expiration" AndValue:(NSData *)_expirationDate];
 
-    [_uploadController uploadDocument:titleField.text];    
+    [_uploadController uploadDocument:titleField.text withCategory:CategoryLicenses];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
